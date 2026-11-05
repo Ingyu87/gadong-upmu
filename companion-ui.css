@@ -116,3 +116,23 @@ body[data-month="12"],body[data-month="1"],body[data-month="2"]{--season-accent:
 @keyframes juriWalkArm{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
 @keyframes juriLeftStep{0%,100%{transform:translate(0,0)}25%{transform:translate(-10px,-8px)}50%{transform:translate(-14px,0)}75%{transform:translate(5px,0)}}
 @media(max-width:720px){#companion-slot.assignment-companion{width:110px;right:8px}.assignment-companion .juri-character{width:110px}.assignment-companion .guide-bubble{right:0;bottom:115px;width:min(320px,calc(100vw - 30px))}}
+
+/* Reserve a separate lane for Juri and reveal the campus around the table. */
+.assignment-home{max-width:none;margin:0 350px 0 0;padding:18px 20px 24px}
+.assignment-heading{gap:16px;padding:10px 16px}.assignment-heading p{font-size:17px}.assignment-heading h1{font-size:28px}
+.assignment-card{grid-template-columns:160px repeat(6,minmax(0,1fr));background:#fffefaeb}
+.assignment-grid{background:transparent;box-shadow:none}.assignment-grid[hidden]{display:none}
+.assignment-role{min-height:48px;padding:8px 4px}.assignment-role strong{font-size:19px}.assignment-card h2{font-size:20px;padding:12px}
+.fold-all{margin-left:auto;flex-shrink:0;border:1px solid #afbeac;border-radius:9px;background:#fffefa;color:#263e30;padding:8px 13px;font-size:17px;font-weight:750;cursor:pointer}
+#companion-slot.assignment-companion{width:300px;right:24px;bottom:30px}
+.assignment-companion .juri-character{width:250px;margin:0;transform-origin:bottom center}
+.assignment-companion .guide-bubble{position:relative;bottom:auto;right:auto;width:100%;max-height:420px}
+.companion.has-arrived .juri-character{transform:none}
+.juri-character{transform-origin:bottom center;max-width:100%}
+.companion.is-collapsed .guide-bubble{margin:0}
+.school-season{background-size:cover;background-position:center 65%}
+@media(min-width:1100px){.work-shell{grid-template-columns:210px minmax(0,1fr) 300px}.work-shell #companion-slot{overflow:visible}.work-shell .juri-character{width:280px;margin:10px 0 0}.work-shell .guide-bubble{width:100%;box-sizing:border-box}}
+@media(max-width:1400px) and (min-width:1001px){.assignment-home{margin-right:290px;padding:14px}.assignment-card{grid-template-columns:135px repeat(6,minmax(0,1fr))}.assignment-role strong{font-size:18px}.assignment-card h2{font-size:18px}.assignment-heading{flex-wrap:wrap}.assignment-heading p{display:none}#companion-slot.assignment-companion{width:260px;right:15px}.assignment-companion .juri-character{width:220px}}
+@media(max-width:1000px){.assignment-home{margin:0;padding:14px}.assignment-card{grid-template-columns:145px repeat(3,minmax(0,1fr))}#companion-slot.assignment-companion{position:relative;right:auto;bottom:auto;margin:12px auto;width:300px}.assignment-companion .guide-bubble{position:relative;bottom:auto;right:auto}.assignment-heading{display:flex;flex-wrap:wrap}.assignment-heading p{display:none}}
+@media(max-width:600px){.assignment-card{grid-template-columns:repeat(2,minmax(0,1fr))}.assignment-heading h1{font-size:25px}.assignment-role strong{font-size:18px}.work-period{flex-wrap:wrap}}
+@media(max-width:720px){.work-shell #companion-slot{position:relative;right:auto;bottom:auto;top:auto;width:min(300px,100%);margin:20px auto;z-index:1}.work-shell .guide-bubble{position:relative;bottom:auto;right:auto;width:100%;box-sizing:border-box}.work-shell .juri-character{width:190px;margin:10px auto}.work-shell .companion-inner{align-items:center}}
