@@ -5,7 +5,7 @@ function roleOptions(){return Object.entries(DB.R).map(([id,r])=>{
  return `<option value="${E(id)}" ${id===ST.role?'selected':''}>${E(owners)} — ${E(r.label)}</option>`;
 }).join('');}
 function workspaceControls(){return `<section class="work-controls" aria-label="업무 선택">
- <div class="work-select"><label for="work-person">담당자 · 담당 업무</label><select id="work-person" onchange="useRole(this.value);ST.view='work';render()">${roleOptions()}</select></div>
+ <div class="work-select"><label for="work-person">담당 업무</label><select id="work-person" onchange="useRole(this.value);ST.view='work';render()">${roleOptions()}</select></div>
  <div class="work-years" aria-label="학년도">${[2026,2025].map(y=>`<button aria-pressed="${ST.yr===y}" onclick="ST.yr=${y};render()">${y}학년도</button>`).join('')}</div>
  <nav class="work-tabs" aria-label="업무 화면">${workspaceTabs.map(([id,label])=>`<button aria-pressed="${ST.tab===id}" onclick="ST.tab='${id}';ST.view='work';render()">${label}</button>`).join('')}</nav>
  <div class="work-months" aria-label="월 선택">${MO.map(m=>`<button aria-pressed="${ST.m===m}" onclick="ST.m=${m};render()">${m}월</button>`).join('')}</div>
@@ -21,7 +21,7 @@ function workspaceStats(){
 vHome=function(){ST.view='work';ST.tab='cal';return vWork();};
 vWork=function(){
  const body=ST.tab==='cal'?vCal():ST.tab==='task'?vTask():ST.tab==='todo'?vTodo():vSearch();
- return bar('가동초 업무 길잡이',`${RL().label} · ${ST.yr}학년도`,'업무와 자료 찾기','담당자와 월을 선택하세요. 업무분장표로 담당 범위를, 교육계획서로 운영 내용을 확인할 수 있습니다.')+drawer()+`<main class="wrap">${workspaceControls()}${workspaceStats()}${body}</main>`;
+ return bar('가동초 업무 길잡이',`${RL().label} · ${ST.yr}학년도`,'업무와 자료 찾기','담당 업무와 월을 선택하세요. 업무분장표로 담당 범위를, 교육계획서로 운영 내용을 확인할 수 있습니다.')+drawer()+`<main class="wrap">${workspaceControls()}${workspaceStats()}${body}</main>`;
 };
 const originalWorkspaceRender=render;
 render=function(){originalWorkspaceRender();if(ST.tab==='search')doSearch();};

@@ -10813,7 +10813,58 @@
           },
           "owners": [
             "백인규"
-          ]
+          ],
+          "guidance": {
+            "description": "학교 여건과 교육공동체 의견을 반영하여 학년 교육과정과 연간 운영 계획을 조정합니다.",
+            "steps": [
+              "전년도 평가와 구성원 의견을 모읍니다.",
+              "학년별 편성·수업시수·학교자율시간을 협의합니다.",
+              "운영 중 변경 사항과 평가 결과를 다음 계획에 반영합니다."
+            ],
+            "manual_pages": [
+              48,
+              49,
+              53,
+              73
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "20.(00초)학교교육과정 설계 점검 체크리스트_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1ZEO1ZKAArvgXRHVnVNDrr4u1m-VblXf-_gknSTCobco/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "06.학사일정 관리 및 수업시수 편성 프로그램(초등용)_v1.0",
+                "url": "https://drive.google.com/file/d/1x7ury0lS-kebb88PHBBSvbKuzQvpO0eS/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "37.학교자율시간 설계(워크시트)_v1.0",
+                "url": "https://drive.google.com/file/d/195XsyiuID1a7fFJtR7X4l0DyNXuujiO-/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "45. (00초)신학년집중준비기간 운영계획_v1.0",
+                "url": "https://drive.google.com/file/d/1QHKiEey6WkWhbSv-t_76XtIPOMMJ4axq/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "교육과정의 성격과 설계·운영의 중점",
+                "matched_pdf_pages": [
+                  18
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학교자율사업·교육경비보조",
@@ -10850,7 +10901,46 @@
           },
           "owners": [
             "백인규"
-          ]
+          ],
+          "guidance": {
+            "description": "공모·자율사업과 교육경비보조사업을 취합하고 사업별 담당 및 결과보고를 관리합니다.",
+            "steps": [
+              "사업별 계획·담당 업무·예산을 확인합니다.",
+              "집행 내역과 사업 운영 자료를 담당 업무별로 취합합니다.",
+              "사업별 지침에 맞춰 결과보고와 정산 자료를 정리합니다."
+            ],
+            "manual_pages": [
+              29,
+              77
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "23.(00초)예산집행현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "송파구 교육경비보조금",
+                "matched_pdf_pages": [
+                  110
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "교원학습공동체",
@@ -10885,7 +10975,45 @@
           },
           "owners": [
             "백인규"
-          ]
+          ],
+          "guidance": {
+            "description": "공동체별 연구 주제와 계획을 모으고 수업 실천 및 나눔을 지원합니다.",
+            "steps": [
+              "공동체 구성과 연구 주제를 협의합니다.",
+              "공동 연구·수업 적용·나눔 내용을 기록합니다.",
+              "운영 결과와 예산 사용 내역을 정리합니다."
+            ],
+            "manual_pages": [
+              70
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "74.교원학습공동체 수업 나눔(수업성장일지 서식 포함)_v1.0",
+                "url": "https://drive.google.com/file/d/1dunwmEOS6VQoaNrvCpVacBEuiEyBN-UT/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "교원학습공동체 및 자기연수지원",
+                "matched_pdf_pages": [
+                  84
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학교평가",
@@ -10925,7 +11053,55 @@
           },
           "owners": [
             "백인규"
-          ]
+          ],
+          "guidance": {
+            "description": "학교교육활동 전반을 평가하여 다음 학년도 교육계획에 반영합니다.",
+            "steps": [
+              "평가위원회와 평가계획을 마련합니다.",
+              "지표별 자료와 교육공동체 의견을 취합합니다.",
+              "결과를 공유하고 개선 사항을 다음 교육계획에 반영합니다."
+            ],
+            "manual_pages": [
+              72
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "17.(초등학교)학교평가 평가지표_평가문항 예시 _v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1ROZSU4M6xkJs1QD9CSnFrhVkn4Ob3JkE/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "18.(00초)학교평가 자율점검표_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1mE0fZtkdzYHqw0EHSpMTfF-YWNpkCSwzgtZL1qh7oiQ/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "19.학교평가 만족도 통계(그래프 쉽게 따라하기)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1U8o43FD4RfAT3ekL-TuD71whdLZf69h6ZQGEUSfkxug/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "70.(가정통신문)00초 학교평가 결과안내(예시 포함)_v1.0",
+                "url": "https://drive.google.com/file/d/1NnHMwC8gI2vBRHm8nz_Qh-WuklkAeqJh/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교 평가 실시 계획",
+                "matched_pdf_pages": [
+                  45
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "수업 및 장학",
@@ -11001,7 +11177,67 @@
           ],
           "owners": [
             "백인규"
-          ]
+          ],
+          "guidance": {
+            "description": "수업 공개·나눔과 임상·컨설팅 장학을 계획하고 교사의 수업 개선을 지원합니다.",
+            "steps": [
+              "희망과 필요를 조사하여 장학 계획을 세웁니다.",
+              "수업 자료와 참관·협의 기록을 준비합니다.",
+              "협의 결과를 수업 개선과 다음 장학 계획에 반영합니다."
+            ],
+            "manual_pages": [
+              63,
+              69
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "53.2022 개정 교육과정 적용 수업 참관록 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1mYeDBANQgKnETQn4TjDP2BqeQEJF9Rtb/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "44.(00초)교내 자율연수 운영계획_v1.0",
+                "url": "https://drive.google.com/file/d/1nnQ9DS1xlHuZg10yyOlflpqE5His_Phz/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "수업 장학",
+                "matched_pdf_pages": [
+                  80
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "컨설팅 장학",
+                "matched_pdf_pages": [
+                  82
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "선행학습 유발 관행 근절",
+                "matched_pdf_pages": [
+                  136
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -26761,7 +26997,46 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "과학교육 행사와 과학정보부 운영을 총괄합니다.",
+            "steps": [
+              "학교 교육과정과 과학교육 행사 계획을 맞춥니다.",
+              "관련 담당자와 일정·준비물·안전 사항을 협의합니다.",
+              "운영 결과를 취합하여 다음 계획에 반영합니다."
+            ],
+            "manual_pages": [
+              133,
+              134
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "02.과학실 안전관리 점검표 등 각종 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1nPCLiqe2O7nCrGoSYi7qa42xObvRNW9Z/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "창의력 쑥! 과학교육행사",
+                "matched_pdf_pages": [
+                  87
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "개인정보·정보윤리교육",
@@ -26813,7 +27088,66 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "개인정보 관리·파기와 정보윤리교육을 학교 계획에 따라 운영합니다.",
+            "steps": [
+              "개인정보 내부관리계획과 처리방침을 점검합니다.",
+              "정보윤리·저작권·과의존 예방교육을 운영합니다.",
+              "보유 자료의 정비·파기 및 점검 결과를 기록합니다."
+            ],
+            "manual_pages": [
+              137,
+              140,
+              141,
+              142
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "06.개인정보 내부 관리계획_v1.0",
+                "url": "https://drive.google.com/file/d/1E60TFalpnFynTnNpurq9D3CMnl3gHrRj/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "07.개인정보 처리방침_v1.0",
+                "url": "https://drive.google.com/file/d/1iFwD3kVN6lwfOm71BPEFtrIliXI4ROKH/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "33.(00초)2024학년도 개인정보 파기 계획(안)_V1.0",
+                "url": "https://drive.google.com/file/d/131Sb1a8wxinjr27qvZu22oq8wwm6dkLC/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "35.2025 개인정보파일 표준목록 합산 통계_V1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1ECwV_2JZ9x2RDXf2E7b024yduzdeV6Otm-AcGc5hHME/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "정보통신윤리교육",
+                "matched_pdf_pages": [
+                  88
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "정보 보안",
+                "matched_pdf_pages": [
+                  90
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "AI·SW·정보교육 사업",
@@ -26877,7 +27211,61 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "교과와 연계한 AI·SW교육 및 교원 정보화 연수를 운영합니다.",
+            "steps": [
+              "학년 교육과정에서 정보교육 내용을 확인합니다.",
+              "수업과 교원 연수에 필요한 내용을 협의합니다.",
+              "사업 운영 결과와 수업 활용 사례를 정리합니다."
+            ],
+            "manual_pages": [
+              137
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "48.(000초)교직원 연수 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1Nhi1eXU82zM74ckgEsimrFSVy7nT3nh6/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "정보화‧디지털혁신 교육 연수",
+                "matched_pdf_pages": [
+                  83
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "SW(소프트웨어) 교육",
+                "matched_pdf_pages": [
+                  86
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "AI 기반 융합 교육",
+                "matched_pdf_pages": [
+                  86
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "생태전환교육",
@@ -26914,7 +27302,40 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "학년 교육과정에 생태전환교육을 반영하고 환경교육 사업을 운영합니다.",
+            "steps": [
+              "학년별 생태전환교육 계획을 취합합니다.",
+              "교육과정과 연결한 실천 활동을 운영합니다.",
+              "운영 현황을 정리하여 학교평가와 다음 계획에 반영합니다."
+            ],
+            "manual_pages": [
+              135
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "51.범교과 편성 예시_v1.0",
+                "url": "https://drive.google.com/file/d/1Hotoj33Xnlso2mi3kX6JC-rWG_FCWhEr/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "생태전환교육",
+                "matched_pdf_pages": [
+                  88
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "기자재·정보화기기 선정",
@@ -26950,7 +27371,46 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "수업에 필요한 기자재 수요를 조사하고 선정 절차를 진행합니다.",
+            "steps": [
+              "보유 현황과 학년별 수요를 확인합니다.",
+              "선정 기준과 비교 자료를 마련하여 협의합니다.",
+              "선정 결과에 따라 구매를 요청하고 인수 내용을 확인합니다."
+            ],
+            "manual_pages": [
+              138,
+              139
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "28.(00초)물품 용역 통합선정위원회 회의 자료(전자칠판)_V1.0",
+                "url": "https://drive.google.com/file/d/1Wxk_uHJRmG-KQP52TbKrkenL-IHEe-3U/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "39.(00초)2022년 학교 정보화기기 보급 및 관리방안_V1.0",
+                "url": "https://drive.google.com/file/d/1loEIP11g5TQFAx5MW5efGi5JEnK-lILN/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교자료 확충",
+                "matched_pdf_pages": [
+                  126
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학습준비물실·과학실 총괄",
@@ -27013,7 +27473,73 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "학습준비물 지원과 과학실 운영을 총괄하고 필요한 자료·안전 사항을 점검합니다.",
+            "steps": [
+              "학년별 준비물 수요와 과학실 운영 계획을 확인합니다.",
+              "구입·대여 및 안전관리 사항을 관련 담당자와 협의합니다.",
+              "자료 이용 현황과 점검 결과를 확인합니다."
+            ],
+            "manual_pages": [
+              133,
+              134,
+              135
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "38.(00초)학습준비물실 이용 현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1ZkII7uUeRemn8XIFRnT1zFymIkPxIFAGG2cdq-iN43s/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "02.과학실 안전관리 점검표 등 각종 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1nPCLiqe2O7nCrGoSYi7qa42xObvRNW9Z/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "40.(00초)학습준비물 지원센터 운영 안내_V1.0",
+                "url": "https://drive.google.com/file/d/1Jz1W7Dnpw3iRivUCvNuQfO-ciWNsis_2/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "42.(00초)24년도 1학기 학년별 학습준비물 구입 내역_V1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1M906FScA7UZ6RbKSSXLIVQVYFN5TAqWve1uLMfg9a6k/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "탐구학습의 장 과학실 운영",
+                "matched_pdf_pages": [
+                  91
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학습자료실 운영",
+                "matched_pdf_pages": [
+                  123
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학습준비물 지원",
+                "matched_pdf_pages": [
+                  126
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "디벗 총괄",
@@ -27051,7 +27577,49 @@
           },
           "owners": [
             "박경아"
-          ]
+          ],
+          "guidance": {
+            "description": "디벗 도입·운영과 학교 교육용 계정 관리를 총괄합니다.",
+            "steps": [
+              "보급 대상과 기기·계정 현황을 확인합니다.",
+              "사용 안내와 동의 절차를 준비합니다.",
+              "수업 활용과 기기 인계·회수 사항을 점검합니다."
+            ],
+            "manual_pages": [
+              138,
+              139
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "30.(가정통신문)「디벗」 기기 배부 및 안전한 사용을 위한 개인정보 수집·이용 동의 안내_V1.0",
+                "url": "https://drive.google.com/file/d/1fQz_80irU-4hUcG03VHxUL0WbPCBEGNG/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "31.(가정통신문)교육용 Google Workspace 이용을 위한 개인정보 수집·이용 및 동의 안내_V1.0",
+                "url": "https://drive.google.com/file/d/1XDDbxAboQVVwElcX7pw8QObvjM3XcpSy/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "01.학교 구글 계정 생성 및 관리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1L9CvrGbHMTWPJdt6ES02lMmid-PazwK76ibhr2aVPEI/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "디벗 도입 및 운영(교육과정 반영 계획)",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -35334,29 +35902,56 @@
                   "각 단체의 임원 임기는 1년으로 하며 임원 구성은 각 단체의 활동목적에 따라 달리할 수 있다.",
                   "감염병 등으로 대면 총회가 어려울 시 온라인을 활용하여 비대면으로 실시한다."
                 ]
-              },
-              {
-                "title": "학업중단 예방",
-                "page": 200,
-                "pdf_page": 103,
-                "source": "2026 학교교육계획서(3.4)",
-                "source_url": "https://drive.google.com/file/d/1MB57g6GXCJ7hzHYpERQd9zMZavwGblt5/view",
-                "goal": [
-                  "학업중단 위기 학생의 학교 적응을 돕고 학업중단을 예방한다."
-                ],
-                "way": [
-                  "교육계획서에 교무자치부 방은희 담당으로 명시되어 있다.",
-                  "학업중단 예방 계획과 교내 협업 체계를 마련하고 교원 연수 및 학업중단 숙려제를 운영한다.",
-                  "상담교사와 담임 등이 함께 참여하며 전문상담 자체와 교무 총괄 업무를 구분한다."
-                ],
-                "verified_at": "2026-11-05T04:37:43.413602+09:00"
               }
             ],
             "status": "linked"
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "신입생과 재학생 보호자 대상 학교설명회를 준비하고 연수자료를 취합합니다.",
+            "steps": [
+              "설명회 일정과 진행 내용을 협의합니다.",
+              "부서별 교육활동 및 보호자 연수자료를 취합합니다.",
+              "안내·행사 운영 후 협의 사항을 정리합니다."
+            ],
+            "manual_pages": [
+              26
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "14.(00초) 학부모총회 학부모 연수자료_v1.0",
+                "url": "https://drive.google.com/file/d/1V9NxzXPtxdC3bCIpqyMzU7uOOL-GpaCv/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "55.(00초) 1학년 학부모 연수 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/11wvLJM6sPXTvje7xziOMOCfgBnRaIl1Vd6diilzeZKA/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "설명회 운영은 학교교육계획서의 학교 교육과정 설명회 및 학부모총회 절을 참고합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교 교육과정 설명회 및 학부모총회",
+                "matched_pdf_pages": [
+                  76
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "신입생 예비소집·취학",
@@ -35398,7 +35993,44 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "취학대상자 확인, 안내책자 제작, 예비소집과 미취학학생 관리를 담당합니다.",
+            "steps": [
+              "취학대상자와 안내 사항을 확인합니다.",
+              "예비소집 자료를 준비하고 참석 여부를 확인합니다.",
+              "미참석·미취학 학생의 확인 결과를 관리합니다."
+            ],
+            "manual_pages": [
+              30,
+              31
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "58.(00초) (가정통신문)신입생 학교생활준비물 및 학습준비물 안내_v1.0",
+                "url": "https://drive.google.com/file/d/1y5JYATZoGo8VmnaTgrWsOKGmcWsSWqsJ/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "55.(00초) 1학년 학부모 연수 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/11wvLJM6sPXTvje7xziOMOCfgBnRaIl1Vd6diilzeZKA/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교규칙 제17~20조 입학·취학",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "규정 및 각종위원회",
@@ -35437,7 +36069,43 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "학교규칙과 제반 규정을 관리하고 각종 위원회의 구성을 정리합니다.",
+            "steps": [
+              "개정할 규정과 위원회 구성 현황을 확인합니다.",
+              "의견 수렴과 해당 심의 절차를 진행합니다.",
+              "확정된 규정과 위원회 명단·회의 기록을 정리합니다."
+            ],
+            "manual_pages": [
+              28
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "72.(00초)학교규칙 제개정 계획(안)_v1.0",
+                "url": "https://drive.google.com/file/d/1J4wLRRMhErr9BVFwfi-rD4mNnEJYBpMI/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교규칙 제60~61조 규정 제·개정",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "교육 안내(일일·월중·학사력·근무자)",
@@ -35478,7 +36146,53 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "일일교육·월중계획·학사력과 방학 중 교육 운영 및 근무 배정을 정리합니다.",
+            "steps": [
+              "부서·학년별 일정과 운영 요청을 취합합니다.",
+              "일정 중복과 학사일정을 조정합니다.",
+              "확정 내용을 안내하고 변경 사항을 반영합니다."
+            ],
+            "manual_pages": [
+              28
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "07.(00초)일일업무(가로형) 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1lqXfysYd2j6XMbIj7PJMLVtiWZR0vcRE/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "08.(00초) 월중계획(예시포함)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/13ZtRV3NgdSOvJtsb2DuVlvV97WNkOzmuySz3PYxzZH4/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "05.(00초)2026 학사일정(A)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1QunYkMhpECBYhIYYkSX1KkBDbwb13bsaT8XIG8PzwQU/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "47.(00초)겨울방학 계획서_v1.0",
+                "url": "https://drive.google.com/file/d/1J1NPkd02IJtan-aCSor3OdvQ4OrXavij/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교규칙 제5~6조 학기·휴업일",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학부모회 운영(총괄)",
@@ -35514,7 +36228,56 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "학교 학부모회와 학부모회 주관 지원사업을 총괄합니다.",
+            "steps": [
+              "학부모회 구성 및 총회 계획을 준비합니다.",
+              "임원 선출과 회의·지원사업을 운영합니다.",
+              "협의 결과와 사업 운영 내용을 정리합니다."
+            ],
+            "manual_pages": [
+              33
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "62.(00초)학부모회 구성 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1EPE0qSy6tiF2GSptKV_LjOYXDulWHr6f/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "63.(00초)학부모회 선출관리위원회 명단_v1.0",
+                "url": "https://drive.google.com/file/d/1-o8_rTPOANb4aDQBBw9qbdlBokMVhuvD/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "64.(00초)(가정통신문)학부모회 임원 당선 안내_v1.0",
+                "url": "https://drive.google.com/file/d/1aBWzsAgt9Q2O9AogSExd3vLC52l170WG/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "65.(00초)학부모회임원_당선통지서_v1.0",
+                "url": "https://drive.google.com/file/d/1QAeAxS9uZt2xnT0hGqabWs_4Ukx5Xats/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "소통하는 학부모회",
+                "matched_pdf_pages": [
+                  75,
+                  172
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "의무교육학생관리위원회",
@@ -35553,7 +36316,38 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "장기결석학생 관리와 의무교육학생관리위원회 운영을 담당합니다.",
+            "steps": [
+              "취학·출석 관련 확인이 필요한 학생 현황을 파악합니다.",
+              "사안별 자료를 준비하여 위원회를 운영합니다.",
+              "회의 결과와 후속 확인 사항을 관리합니다."
+            ],
+            "manual_pages": [
+              31
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교규칙 제26조 의무교육관리위원회",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "청렴교육",
@@ -35601,7 +36395,53 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "청렴교육 계획을 수립하고 교육 운영 결과를 보고합니다.",
+            "steps": [
+              "학교 청렴교육 계획과 대상별 안내 내용을 준비합니다.",
+              "교직원·보호자 교육을 운영합니다.",
+              "교육 실적과 보고 자료를 정리합니다."
+            ],
+            "manual_pages": [
+              36
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "48.(000초)교직원 연수 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1Nhi1eXU82zM74ckgEsimrFSVy7nT3nh6/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "청렴을 통한 신뢰받는 학교",
+                "matched_pdf_pages": [
+                  121
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "불법찬조금 근절",
+                "matched_pdf_pages": [
+                  121
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "교육활동보호",
@@ -35622,7 +36462,31 @@
           },
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "교육활동 보호 계획과 예방교육 및 사안 관련 업무를 담당합니다.",
+            "steps": [
+              "학교 교육활동 보호 계획을 마련합니다.",
+              "교육공동체에 예방교육과 대응 절차를 안내합니다.",
+              "사안 발생 시 해당 연도 지침에 따라 관련 자료와 지원 절차를 확인합니다."
+            ],
+            "manual_pages": [
+              35
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "61.(00초)교육활동 보호 계획_v1.0",
+                "url": "https://drive.google.com/file/d/18K3xBa6kZq0pgH8ztLKppIVXzHVlDCgJ/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학부모 상담주간",
@@ -35665,7 +36529,32 @@
           ],
           "owners": [
             "방은희"
-          ]
+          ],
+          "guidance": {
+            "description": "보호자 상담 운영 기간과 신청 방법을 안내하고 학급별 운영을 조정합니다.",
+            "steps": [
+              "상담 기간·방법과 안전 대책을 협의합니다.",
+              "학급별 신청과 시간 조정을 안내합니다.",
+              "상담 운영 중 필요한 후속 지원을 협의합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "학생에게 꿈, 학부모에게 행복을 전해주는 상담주간",
+                "matched_pdf_pages": [
+                  58
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "각종행사(입학식·졸업식·인성열기)",
@@ -35707,7 +36596,57 @@
           "owners": [
             "방은희"
           ],
-          "display_name": "각종행사·회의 운영"
+          "display_name": "각종행사·회의 운영",
+          "guidance": {
+            "description": "입학식·졸업식·인성열기와 교직원회의, 분반 업무를 총괄합니다.",
+            "steps": [
+              "행사와 회의의 일정·역할·준비 자료를 협의합니다.",
+              "행사 계획과 회의 안건을 안내합니다.",
+              "운영 결과 및 분반 관련 협의 내용을 정리합니다."
+            ],
+            "manual_pages": [
+              27,
+              29,
+              30
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "56.(00초)졸업식 추진계획_v1.0",
+                "url": "https://drive.google.com/file/d/14XRLWJDOu1X7zVMLSAr1AN7vSe3lYqZ-/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "59.(00초)입학식 식순진행 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/1VCBQSpX6I3ogwyrwOEsPpqo8ACzmJdnHtlW_gjMrGQA/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "09.(00초)부장회의록_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1nxFiwMt9hg9VLyXMsZlOShlQBt1C2yQGUOpkPhOAZPs/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "15.신학년 분반 프로그램(초등용)_v1.0",
+                "url": "https://drive.google.com/file/d/15Ol-J5gSFwdCC9dHiAv5f_rf4RSgXnR9/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "현재 연결된 교육계획서 절은 교직원회의 부분입니다. 입학식·졸업식은 업무분장과 부장업무 자료를 참고합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "토론이 있는 교직원 회의",
+                "matched_pdf_pages": [
+                  77
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -37876,7 +38815,37 @@
           },
           "owners": [
             "이주영"
-          ]
+          ],
+          "guidance": {
+            "description": "학년별 진로체험, 진로적성검사와 전환기 진로연계교육을 운영합니다.",
+            "steps": [
+              "학년 특성과 학생 요구에 맞는 활동을 협의합니다.",
+              "체험기관·검사·프로그램 일정과 운영 조건을 확인합니다.",
+              "활동 결과를 학생의 진로 탐색과 다음 계획에 활용합니다."
+            ],
+            "manual_pages": [
+              126,
+              127,
+              128,
+              129
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "자기 빛깔을 찾아가는 진로교육",
+                "matched_pdf_pages": [
+                  95
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학생맞춤통합지원",
@@ -37926,7 +38895,51 @@
           },
           "owners": [
             "이주영"
-          ]
+          ],
+          "guidance": {
+            "description": "지원팀을 운영하여 학생별 지원사업을 연결하고 1·2학년 협력강사와 학습지원튜터를 선발합니다.",
+            "steps": [
+              "지원이 필요한 학생의 상황을 협의합니다.",
+              "학생별 지원과 지역기관 연계를 조정합니다.",
+              "협력강사·튜터 선발 후 운영 담당자에게 필요한 사항을 인계합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "33.(00초)협력강사 공개채용_계획_공고_v1.0",
+                "url": "https://drive.google.com/file/d/1qMYBKIt5bnoY18cQymX6cHAUvm0sKlC0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "협력강사·튜터 선발은 학생맞춤통합지원 담당, 선발 이후 운영·관리는 기초학력 강사관리 담당이 맡습니다.",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "학생맞춤통합지원 체계 구축",
+                "matched_pdf_pages": [
+                  101
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "기초학력 협력강사, 학습지원 튜터를 통한 맞춤교육",
+                "matched_pdf_pages": [
+                  103
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "교육복지 총괄",
@@ -37965,7 +38978,38 @@
           },
           "owners": [
             "이주영"
-          ]
+          ],
+          "guidance": {
+            "description": "서울형 교육복지, 사제멘토링, 학생·가족성장지원과 지역기관 연계를 운영합니다.",
+            "steps": [
+              "담임 및 지원팀과 학생의 지원 필요를 협의합니다.",
+              "멘토링과 지역 연계 프로그램을 계획·운영합니다.",
+              "학생 지원 경과와 사업 결과를 정리합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "서울형 교육복지사업",
+                "matched_pdf_pages": [
+                  102
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "범교과교육(다문화·양성평등·통일·세계시민·경제)",
@@ -38026,7 +39070,56 @@
           },
           "owners": [
             "이주영"
-          ]
+          ],
+          "guidance": {
+            "description": "다문화·양성평등·통일·세계시민·경제교육을 교육과정과 연계하여 운영합니다.",
+            "steps": [
+              "학년별 교육과정과 관련 교육 주제를 대조합니다.",
+              "계기교육과 체험활동 계획을 안내합니다.",
+              "학년별 운영 내용을 취합합니다."
+            ],
+            "manual_pages": [
+              96
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "51.범교과 편성 예시_v1.0",
+                "url": "https://drive.google.com/file/d/1Hotoj33Xnlso2mi3kX6JC-rWG_FCWhEr/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "부장업무 자료 96쪽은 통일·역사·다문화·세계시민교육 부분을 참고합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "경제교육",
+                "matched_pdf_pages": [
+                  58
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "역사·통일·독도 교육",
+                "matched_pdf_pages": [
+                  73
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "다문화 교육",
+                "matched_pdf_pages": [
+                  74
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -42156,7 +43249,63 @@
           },
           "owners": [
             "김은진"
-          ]
+          ],
+          "guidance": {
+            "description": "생활·인권·사회정서교육과 학생생활규정 관련 업무를 총괄합니다.",
+            "steps": [
+              "학교 인성교육 계획과 학생생활규정을 점검합니다.",
+              "학년별 생활교육과 교육공동체 연수를 조정합니다.",
+              "학생 의견과 운영 결과를 다음 계획에 반영합니다."
+            ],
+            "manual_pages": [
+              94,
+              95,
+              116
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "23. 2026학년도 인성교육계획안_v1.0",
+                "url": "https://drive.google.com/file/d/1GoiopiNcmIbZXy2C19D1-NbLcqWbK0aW/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "04.「학생생활규정 길라잡이(2025 개정판)」-전체서식_v1.0",
+                "url": "https://drive.google.com/file/d/167zpNkKqsZD22el3iEM-KmzuHziknzC8/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "공동체형 인성교육",
+                "matched_pdf_pages": [
+                  48
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학생 인권교육",
+                "matched_pdf_pages": [
+                  51
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "사회정서교육(생명존중 및 자살예방교육)",
+                "matched_pdf_pages": [
+                  51
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "학교폭력예방",
@@ -42194,7 +43343,58 @@
           },
           "owners": [
             "김은진"
-          ]
+          ],
+          "guidance": {
+            "description": "학교폭력 예방교육과 전담기구 및 사안 처리 업무를 담당합니다.",
+            "steps": [
+              "예방교육과 전담기구 운영 계획을 마련합니다.",
+              "사안별 접수·조사·심의 자료를 해당 연도 지침에 따라 관리합니다.",
+              "조치 이행 및 학생 지원 경과를 확인합니다."
+            ],
+            "manual_pages": [
+              92,
+              93,
+              100,
+              101
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "06. 2025학년도 학교폭력 전담기구 구성 및 운영 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1sIpGQh5VYKxWIc4Qaz9kyg9nPq9mUL-0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "07. 학교폭력 전담기구 비밀유지서약서-양식_v1.0",
+                "url": "https://drive.google.com/file/d/1cCapJu0Wc9yjKjB2ff-MOd3_P52IOJPX/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "26.12_1 (붙임4) 학교폭력 사안처리 절차 자체 점검표(서식)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1xdjaz8E2O3UGz3Ynfk3RcUdXa4SHWYWv/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "25. 2025 학교폭력 생활교육 업무 담당자를 위한 알쓸소중(한글 주요 양식 모음)_v1.0",
+                "url": "https://drive.google.com/file/d/1cbxXfkBHFlGFGDst2lmUlM0C6SBMULEV/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "관계가꿈 중심 학교폭력예방교육",
+                "matched_pdf_pages": [
+                  52
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "안전업무 총괄",
@@ -42245,7 +43445,57 @@
           },
           "owners": [
             "김은진"
-          ]
+          ],
+          "guidance": {
+            "description": "학교 안전계획과 재난 대비 업무를 총괄합니다.",
+            "steps": [
+              "학교 안전계획과 연간 교육·훈련을 협의합니다.",
+              "훈련 담당자와 일정·역할을 조정합니다.",
+              "점검·훈련 결과의 보완 사항을 확인합니다."
+            ],
+            "manual_pages": [
+              98,
+              99
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "19. 2025 OO초 화재 대피 훈련 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1iHh46dGqRocaVp1LC3inEAbTMV4h0ify/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "20_1 2025년 지진대피 및 화재대비 민방위훈련 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1WAMwL484fkShDLVxivyOQVDg7NfFjVM2/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27. 안전점검의 날 체크리스트(0월)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1uPW5VtfSrHHxD-6ZAo1VQyMzV8ZLJVTDSuP2-427wvU/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "학교 전체 안전계획은 부장이 총괄하고, 안전교육 담당은 훈련과 교육을 실행합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교 안전교육",
+                "matched_pdf_pages": [
+                  60
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학교 출입자 관리·방문 사전예약제",
+                "matched_pdf_pages": [],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "기존 출처 유지 · 3.4판 문장 일치 미확인"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "봉사활동",
@@ -42293,7 +43543,43 @@
           },
           "owners": [
             "김은진"
-          ]
+          ],
+          "guidance": {
+            "description": "학생 봉사활동 계획과 인정 관련 안내를 담당합니다.",
+            "steps": [
+              "학교 교육과정의 봉사활동 계획을 확인합니다.",
+              "학생에게 활동 절차와 인정 기준을 안내합니다.",
+              "학교 담당 범위의 활동 실적과 협의 사항을 확인합니다."
+            ],
+            "manual_pages": [
+              97,
+              118
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학생봉사활동",
+                "matched_pdf_pages": [
+                  72
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학생봉사활동",
+                "matched_pdf_pages": [
+                  72
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -46482,7 +47768,57 @@
           },
           "owners": [
             "최문위"
-          ]
+          ],
+          "guidance": {
+            "description": "체육교육 계획, 스포츠강사 관리, 체육행사와 학교스포츠클럽을 총괄합니다.",
+            "steps": [
+              "체육교육 일정·예산·강사 운영 계획을 마련합니다.",
+              "학년 및 담당자와 행사·클럽 운영을 협의합니다.",
+              "운영 결과와 예산·시설 관련 사항을 확인합니다."
+            ],
+            "manual_pages": [
+              154,
+              155,
+              158,
+              160,
+              161
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "23.(00초)예산집행현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교체육교육 기본계획",
+                "matched_pdf_pages": [
+                  110
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학교스포츠클럽",
+                "matched_pdf_pages": [
+                  112
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "야구부 업무(부장)",
@@ -46528,7 +47864,49 @@
           },
           "owners": [
             "최문위"
-          ]
+          ],
+          "guidance": {
+            "description": "야구부 계획·예산·훈련·대회 참가와 지도자 관련 업무를 총괄합니다.",
+            "steps": [
+              "연간 운영 및 대회·훈련 계획을 마련합니다.",
+              "예산·안전·학부모 협의 사항을 점검합니다.",
+              "대회와 훈련 결과를 정리하고 학습지원 담당자와 협의합니다."
+            ],
+            "manual_pages": [
+              169,
+              170,
+              171,
+              172,
+              173
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "23.(00초)예산집행현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "1교 1기 운영계획(가동야구부 육성계획)",
+                "matched_pdf_pages": [
+                  115
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         },
         {
           "name": "예술관련 사업(부장)",
@@ -46567,7 +47945,47 @@
           },
           "owners": [
             "최문위"
-          ]
+          ],
+          "guidance": {
+            "description": "학교예술교육과 초등예술하나 계획, 강사 선정 및 예술사업을 총괄합니다.",
+            "steps": [
+              "학년별 예술교육 수요와 예산을 협의합니다.",
+              "강사 선정과 사업 운영 계획을 준비합니다.",
+              "운영 담당자와 결과 및 다음 계획을 협의합니다."
+            ],
+            "manual_pages": [
+              174,
+              175,
+              176
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "23.(00초)예산집행현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "33.(00초)협력강사 공개채용_계획_공고_v1.0",
+                "url": "https://drive.google.com/file/d/1qMYBKIt5bnoY18cQymX6cHAUvm0sKlC0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "부장은 계획·예산·강사 선정을 총괄하고, 예술교육 담당은 강사 및 수업·버스킹 운영을 맡습니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교예술교육(초등예술하나)",
+                "matched_pdf_pages": [
+                  104
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -48719,7 +50137,52 @@
           },
           "owners": [
             "학년부장"
-          ]
+          ],
+          "guidance": {
+            "description": "학년 교육과정에 맞춰 학생 참여 수업, 현장체험과 외부 프로그램을 운영합니다.",
+            "steps": [
+              "학년 협의로 교육과정과 활동 내용을 정합니다.",
+              "외부 활동의 일정·안전·준비 사항을 확인합니다.",
+              "학생 활동과 평가 결과를 학년 교육과정에 반영합니다."
+            ],
+            "manual_pages": [
+              163,
+              164,
+              165
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "01.(00초)학생 참여형 수업 운영 예산 사용 내역_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1mwJBhn5rfki47d5fLF6J3dAzXHmrh4fo7YvE5-q3qro/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "43.(00초)2000학년도 0학기 현장체험학습 계획(학년, 학급)_v1.0",
+                "url": "https://drive.google.com/file/d/1dDEXVZaPyP7_pRRkBEVJvlfYct_kaQeF/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학생 참여형 수업",
+                "matched_pdf_pages": [
+                  79
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -49492,7 +50955,53 @@
           ],
           "owners": [
             "정대준"
-          ]
+          ],
+          "guidance": {
+            "description": "전교·학급 임원 선출과 임원교육, 전교어린이회 및 학생 캠페인을 지원합니다.",
+            "steps": [
+              "임원 선출과 임원교육 계획을 마련합니다.",
+              "학생 제안과 회의 내용을 바탕으로 자치활동을 지원합니다.",
+              "회의 결과와 활동 평가를 다음 회의에 반영합니다."
+            ],
+            "manual_pages": [
+              34
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "54.(00초)학생자치회의록(전교, 학급)_v1.0",
+                "url": "https://drive.google.com/file/d/1yOtLIET1aN2w8iPcxJzdejMgFxFI7Kjn/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "31.임명장_v1.0",
+                "url": "https://drive.google.com/file/d/1Vsp0c9M2wUbLJw6HRAWGWpd7PqmAcCtp/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "임원교육",
+                "matched_pdf_pages": [
+                  72
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학급 및 전교 어린이회 임원 선출",
+                "matched_pdf_pages": [
+                  73
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -50949,7 +52458,40 @@
           },
           "owners": [
             "김채영"
-          ]
+          ],
+          "guidance": {
+            "description": "인증서·학적·진급·학교생활기록부 안내와 정정 관련 NEIS 업무를 총괄합니다.",
+            "steps": [
+              "학교 업무 일정에 맞춰 입력·확인 사항을 안내합니다.",
+              "학적과 학교생활기록부 자료를 점검합니다.",
+              "정정 심의 등 필요한 절차를 거쳐 처리 내용을 확인합니다."
+            ],
+            "manual_pages": [
+              32
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "12.(00초)4세대 나이스 학기말 성적 업무처리 체크리스트_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1Op6rew3f3xMuhIAAdOQB0lRh9HvksFUXb8fuW8RaCio/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "교육계획서 전·입학 절에는 교무실무사 업무도 포함되어 있습니다. 담당 범위는 9월 업무분장표의 NEIS 총괄 업무로 한정합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "전·입학 업무",
+                "matched_pdf_pages": [
+                  135
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": []
@@ -51258,7 +52800,59 @@
           },
           "owners": [
             "양영숙"
-          ]
+          ],
+          "guidance": {
+            "description": "학부모 연수와 평생교육을 계획하고 운영합니다.",
+            "steps": [
+              "학부모의 교육 수요와 운영 여건을 확인합니다.",
+              "연수 일정·강사·신청 방법을 안내합니다.",
+              "참여 결과와 만족도를 정리합니다."
+            ],
+            "manual_pages": [
+              33
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "46.(00초)학부모연수 운영계획(2종)_v1.0",
+                "url": "https://drive.google.com/file/d/1_TfFxQaG6Es3bmaufwhQe_DopZj6GzzE/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "69.(00초)학부모연수 만족도 조사_v1.0",
+                "url": "https://docs.google.com/forms/d/10o9j2udNjPbGI1cWHEfcpUN8to5pyZ-5aO4Bv-hezhk/viewform",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "소통하는 학부모회",
+                "matched_pdf_pages": [
+                  75,
+                  172
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학교 교육과정 설명회 및 학부모총회",
+                "matched_pdf_pages": [
+                  76
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -51515,7 +53109,25 @@
           },
           "owners": [
             "심희선"
-          ]
+          ],
+          "guidance": {
+            "description": "학교 정보공시 일정을 안내하고 항목별 자료를 취합·확인합니다.",
+            "steps": [
+              "공시 항목별 담당 업무와 제출 일정을 확인합니다.",
+              "자료를 취합하고 수치·기준일을 대조합니다.",
+              "입력 내용과 공시 후 수정 사항을 점검합니다."
+            ],
+            "manual_pages": [
+              74
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "부장업무 자료 74쪽은 교육과정 관련 정보공시 부분입니다. 전체 공시 항목은 해당 연도 업무 안내를 확인합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": []
@@ -52122,7 +53734,40 @@
           },
           "owners": [
             "정나리"
-          ]
+          ],
+          "guidance": {
+            "description": "진단활동, 학습지원대상학생 지원협의회와 맞춤형 학습 지원을 담당합니다.",
+            "steps": [
+              "진단 결과와 담임 의견을 바탕으로 지원 필요를 확인합니다.",
+              "지원협의회에서 지도 계획과 기관 연계를 협의합니다.",
+              "학생의 학습 경과와 지원 효과를 점검합니다."
+            ],
+            "manual_pages": [
+              75
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "맞춤식 지도를 통한 기초학력 책임지도",
+                "matched_pdf_pages": [
+                  102
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -52594,7 +54239,43 @@
           },
           "owners": [
             "백명희"
-          ]
+          ],
+          "guidance": {
+            "description": "선발된 협력강사·학습지원튜터와 학습비타민·학습코칭단 강사의 운영을 관리합니다.",
+            "steps": [
+              "담임과 강사의 수업 시간·역할을 조정합니다.",
+              "협력수업 및 활동일지를 관리합니다.",
+              "수업 협의 결과와 학생 지원 경과를 확인합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "1·2학년 협력강사·학습지원튜터 선발은 학생맞춤통합지원 담당과 협의합니다.",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "기초학력 협력강사, 학습지원 튜터를 통한 맞춤교육",
+                "matched_pdf_pages": [
+                  103
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -55465,7 +57146,60 @@
           },
           "owners": [
             "이지예"
-          ]
+          ],
+          "guidance": {
+            "description": "학년별 학생평가, 학업성적관리규정과 학교생활기록부 정정 심의를 담당합니다.",
+            "steps": [
+              "평가계획과 규정을 검토하고 심의합니다.",
+              "평가·통지 및 이의신청 처리 내용을 확인합니다.",
+              "학교생활기록부 정정 심의와 협의록을 관리합니다."
+            ],
+            "manual_pages": [
+              64,
+              65,
+              66,
+              67,
+              68
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "16.2022 개정 교육과정 1~4학년 평가계획 도움자료_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/14wXf5UKxxeZXn4GQlUEDvapKgjDJJsOG/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "21.(00초)학생평가 자체 모니터링 결과_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1Q-yabUAKkdXPeeo4bncP8ttGivyeGd0FGH1VzGfVXLo/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "49.(00초)학생 평가 이의 신청서_v1.0",
+                "url": "https://drive.google.com/file/d/1oXbxnf2uYwA2ea97XyDArKi9pYIyOMcO/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "12.(00초)4세대 나이스 학기말 성적 업무처리 체크리스트_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1Op6rew3f3xMuhIAAdOQB0lRh9HvksFUXb8fuW8RaCio/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학생 발달 평가",
+                "matched_pdf_pages": [
+                  41,
+                  39
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -55875,7 +57609,46 @@
           },
           "owners": [
             "임지혜"
-          ]
+          ],
+          "guidance": {
+            "description": "교과서 선정과 학생 동아리활동 계획·운영을 담당합니다.",
+            "steps": [
+              "교과서 선정 기준과 심사 자료를 준비합니다.",
+              "학생 특성과 교육과정에 맞는 동아리활동을 계획합니다.",
+              "선정 결과와 동아리 운영 내용을 정리합니다."
+            ],
+            "manual_pages": [
+              75,
+              130
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "25.(00초)교과용도서 선정 심사 프로그램 _v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/15Lm2jpp-tjLVX1VjKEOE4R-q8B8k8K-zTY1DA-th04g/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "04.학생 선택(선착순) 기반 반(동아리) 배정 프로그램_v1.0",
+                "url": "https://drive.google.com/file/d/18Du2UszHCrXGx4KRKX_Vz1kE4lwtn7en/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "교육계획서는 동아리활동을 설명합니다. 교과서 선정 절차는 부장업무 자료 75쪽을 참고합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "체험중심의 동아리활동",
+                "matched_pdf_pages": [
+                  105
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -56510,7 +58283,40 @@
           },
           "owners": [
             "유수진"
-          ]
+          ],
+          "guidance": {
+            "description": "독서록·독서행사·보호자 책읽기 활동과 독서토론·독서페스티벌을 운영합니다.",
+            "steps": [
+              "학년별 독서교육과 행사 계획을 협의합니다.",
+              "독서록·행사 자료와 보호자 참여 사항을 준비합니다.",
+              "학생의 독서·토론 활동과 운영 결과를 정리합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "질문과 토론으로 열어가는 독서교육",
+                "matched_pdf_pages": [
+                  96
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "의사소통 중심의 토의·토론교육",
+                "matched_pdf_pages": [
+                  97
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -56961,7 +58767,40 @@
           },
           "owners": [
             "이희운"
-          ]
+          ],
+          "guidance": {
+            "description": "원어민강사와 영어캠프를 운영하고 음악교구를 관리합니다.",
+            "steps": [
+              "영어 수업·캠프 일정과 강사 운영 사항을 협의합니다.",
+              "캠프 준비 및 음악교구의 보유·사용 현황을 확인합니다.",
+              "운영 결과와 교구 정비 사항을 정리합니다."
+            ],
+            "manual_pages": [
+              178
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "교육계획서는 영어교육을 설명합니다. 부장업무 자료 178쪽은 악기 관리 참고이며, 영어강사·캠프 설명은 학교 자료를 따릅니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "글로벌 리더육성을 위한 영어교육",
+                "matched_pdf_pages": [
+                  74
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": []
@@ -57869,7 +59708,55 @@
           },
           "owners": [
             "송연수"
-          ]
+          ],
+          "guidance": {
+            "description": "발명교육과 영재교육 안내·추천 및 이수 관련 업무를 담당합니다.",
+            "steps": [
+              "모집·행사 대상과 일정을 확인하여 안내합니다.",
+              "신청·관찰추천 및 심사 자료를 준비합니다.",
+              "이수 내용과 학교생활기록부 반영 안내를 확인합니다."
+            ],
+            "manual_pages": [
+              136
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "04.2024 개정 영재교육 실무편람 각종 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1_BHfeOcPEiP5mxTU-0T3bg92DmlWEEZS/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "19.지원청 과학·발명교육프로그램 가정통신문(추첨)_V1.0",
+                "url": "https://drive.google.com/file/d/1-Zr0zgBXKiwUOu5hsvp4RLl6ifWinSna/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "21.발명, 영재원 등 교과세특 입력 안내_V1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1_tRHp3yTTY3LA4_SSb02qjUSCG2NjJmIYBKtbeaik_U/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "22.2024학년도 교내 학생과학발명품경진대회 실시 계획(안)_V1.0",
+                "url": "https://drive.google.com/file/d/1NErWN_BgTRu_gHZaUUzMiYi6sBF5Ecrc/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "창의적 잠재 능력 향상 영재교육",
+                "matched_pdf_pages": [
+                  87
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -57996,7 +59883,43 @@
           },
           "owners": [
             "임예린"
-          ]
+          ],
+          "guidance": {
+            "description": "방송부 학생을 지도하고 학교행사 방송·영상·발표자료를 지원합니다.",
+            "steps": [
+              "방송부 구성과 행사별 방송 계획을 확인합니다.",
+              "학생과 장비·자료·진행 순서를 준비합니다.",
+              "방송 운영 및 장비 점검 사항을 정리합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "34.방송조회 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/1X_dP0eeDd0Ut-qYPEW6uaAkF8KPnn1WFcJyONOR9_YY/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "59.(00초)입학식 식순진행 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/1VCBQSpX6I3ogwyrwOEsPpqo8ACzmJdnHtlW_gjMrGQA/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "방송부 운영",
+                "matched_pdf_pages": [
+                  122
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -58875,7 +60798,51 @@
           },
           "owners": [
             "장성준"
-          ]
+          ],
+          "guidance": {
+            "description": "재난 대비 훈련과 교통안전 등 학교 안전교육을 실행합니다.",
+            "steps": [
+              "안전계획에 따라 교육·훈련 일정과 역할을 협의합니다.",
+              "대피 동선과 학생 안내 자료를 준비하여 훈련합니다.",
+              "훈련 결과와 개선 사항을 안전업무 총괄 담당자와 공유합니다."
+            ],
+            "manual_pages": [
+              98,
+              99
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "19. 2025 OO초 화재 대피 훈련 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1iHh46dGqRocaVp1LC3inEAbTMV4h0ify/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "20_1 2025년 지진대피 및 화재대비 민방위훈련 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1WAMwL484fkShDLVxivyOQVDg7NfFjVM2/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "27. 안전점검의 날 체크리스트(0월)_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1uPW5VtfSrHHxD-6ZAo1VQyMzV8ZLJVTDSuP2-427wvU/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교 안전교육",
+                "matched_pdf_pages": [
+                  60
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -60814,7 +62781,34 @@
           },
           "owners": [
             "송지선"
-          ]
+          ],
+          "guidance": {
+            "description": "녹색학부모회와 교통안전 관련 협력 업무를 담당합니다.",
+            "steps": [
+              "통학로와 교통안전 지도 여건을 확인합니다.",
+              "녹색학부모회 및 관련 기관의 활동 일정을 협의합니다.",
+              "활동 중 개선할 사항을 확인하여 공유합니다."
+            ],
+            "manual_pages": [
+              98
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "녹색학부모회",
+                "matched_pdf_pages": [
+                  71
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": []
@@ -60974,7 +62968,54 @@
           },
           "owners": [
             "허은옥"
-          ]
+          ],
+          "guidance": {
+            "description": "선정된 예술강사와 아르떼·초등예술하나 수업, 가동 버스킹을 운영합니다.",
+            "steps": [
+              "학년·강사와 수업 일정 및 협력 방식을 협의합니다.",
+              "수업 운영과 활동 시수를 관리합니다.",
+              "버스킹 등 발표 활동과 운영 결과를 정리합니다."
+            ],
+            "manual_pages": [
+              175,
+              177
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              },
+              {
+                "title": "30.(00초)학예회 운영계획(안)_v1.0",
+                "url": "https://drive.google.com/file/d/19fPOhpoBjPz6R1cE_ijrZm4canc3swjC/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "강사 선정과 학교예술교육 전체 계획은 문예체부장과 협의합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "학교예술교육(초등예술하나)",
+                "matched_pdf_pages": [
+                  104
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "감성을 기르는 가동 버스킹",
+                "matched_pdf_pages": [
+                  105
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -61834,7 +63875,54 @@
           },
           "owners": [
             "박현정"
-          ]
+          ],
+          "guidance": {
+            "description": "PAPS·건강체력교실과 개인 학생선수의 학습 지원을 담당합니다.",
+            "steps": [
+              "체력평가와 학생선수의 학습지원 일정을 확인합니다.",
+              "평가 결과에 따라 건강체력교실을 운영합니다.",
+              "체력 변화와 출결·학습 이수 자료를 점검합니다."
+            ],
+            "manual_pages": [
+              159,
+              160,
+              166,
+              167,
+              168
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "가동어린이 기초체력 육성",
+                "matched_pdf_pages": [
+                  112
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "학생건강체력평가(PAPS)",
+                "matched_pdf_pages": [
+                  113
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "건강체력교실",
+                "matched_pdf_pages": [
+                  113
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -62089,7 +64177,49 @@
           ],
           "owners": [
             "장소영"
-          ]
+          ],
+          "guidance": {
+            "description": "생존수영과 1학생 1스포츠 강사 운영을 담당하며 다음 학년도 수영장 예약을 준비합니다.",
+            "steps": [
+              "학년별 일정과 수영시설·안전 조건을 확인합니다.",
+              "학생 안내와 강사·시설 이용 계획을 준비합니다.",
+              "운영 결과를 정리하고 다음 학년도 시설 이용을 협의합니다."
+            ],
+            "manual_pages": [
+              156,
+              157
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "현재 서식 목록에서는 생존수영 전용 서식을 확인하지 못했습니다. 강사 시수 서식은 1학생 1스포츠 운영에 활용합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "생존수영교육",
+                "matched_pdf_pages": [
+                  114
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              },
+              {
+                "section": "1학생 1스포츠 교육",
+                "matched_pdf_pages": [
+                  114
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ],
       "WP": [
@@ -62500,7 +64630,29 @@
           },
           "owners": [
             "김주휘"
-          ]
+          ],
+          "guidance": {
+            "description": "업무분장에 있는 교직원 상조회와 공동 친목연수를 운영합니다.",
+            "steps": [
+              "공동 운영 사항과 연수 계획을 협의합니다.",
+              "참여 안내와 운영 자료를 준비합니다.",
+              "공동 운영 결과를 정리합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "52.(00초)교직원_마을살이 문화 연수 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1ht3XxdGTGv0aBTvwsxRYT5qG9JOrSmty/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "공동 상조회·친목연수 업무만 안내합니다. 개인 연수·신청 등 개인 사유 문서는 제외합니다.",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ]
     },
@@ -63727,7 +65879,43 @@
           },
           "owners": [
             "정홍주"
-          ]
+          ],
+          "guidance": {
+            "description": "야구부 학생의 출결·최저학력·e-School과 학생선수 관련 위원회·교육을 지원합니다.",
+            "steps": [
+              "학생별 출결과 학습 지원 필요를 확인합니다.",
+              "학습 지원·교육 및 위원회 자료를 준비합니다.",
+              "이수·출결 확인 결과를 야구부 총괄 담당자와 공유합니다."
+            ],
+            "manual_pages": [
+              166,
+              167,
+              168,
+              171
+            ],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [
+              {
+                "title": "27.(00초)회의 결과 보고_v1.0",
+                "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
+                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+              }
+            ],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "야구부 운영·예산·대회·훈련 총괄과 구분하여 학생의 출결·학습 지원을 담당합니다.",
+            "manual_status": "관련 업무 절 참고",
+            "plan_comparison": [
+              {
+                "section": "1교 1기 운영계획(가동야구부 육성계획)",
+                "matched_pdf_pages": [
+                  115
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ]
     },
@@ -63957,7 +66145,32 @@
           },
           "owners": [
             "김예경"
-          ]
+          ],
+          "guidance": {
+            "description": "교육급여·교육비 대상자와 신청, 통신비 지원 및 외부기관 신청을 관리합니다.",
+            "steps": [
+              "사업별 안내에 따라 대상과 신청 사항을 확인합니다.",
+              "명단과 신청 자료를 관리합니다.",
+              "지원 변경 사항과 외부기관 신청 결과를 확인합니다."
+            ],
+            "manual_pages": [],
+            "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
+            "forms": [],
+            "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
+            "note": "",
+            "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
+            "plan_comparison": [
+              {
+                "section": "교육비 및 교육급여 지원 사업",
+                "matched_pdf_pages": [
+                  101
+                ],
+                "method": "기존 발췌 문장과 3.4판 본문 대조",
+                "status": "발췌 문장 일치"
+              }
+            ],
+            "reviewed_at": "2026-11-05"
+          }
         }
       ]
     }
@@ -64305,5 +66518,14 @@
     "excluded_count": 104,
     "removed_link_count": 79,
     "policy": "교육력제고 개인 연구사업은 학교 업무 연결 및 월별업무에서 제외"
+  },
+  "guidance_review": {
+    "date": "2026-11-05",
+    "assignment": "2026.9.1. 업무분장표",
+    "tasks": 54,
+    "manual_tasks": 46,
+    "form_tasks": 46,
+    "unique_forms": 78,
+    "limits": "서식은 원본 목록의 제목과 URL로 선별했습니다. 개별 서식 본문과 접근 권한은 미검토이며 작성 시 원본의 연도와 적용 범위를 확인합니다. 기존 기안의 전수 재검증은 이번 작업에 포함하지 않았습니다."
   }
 }

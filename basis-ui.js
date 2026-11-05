@@ -7,7 +7,7 @@ const basisOpen=name=>{ST.task=name;ST.tab='task';render();scrollTo(0,0);};
 function primaryHtml(t){
   const b=t.basis;
   if(!b)return '<p class="muted">업무 기준을 확인하고 있습니다.</p>';
-  const assignment=`<p class="muted">${E(b.assignment)} · ${b.page}쪽 · ${E(b.heading)}</p><p><b>현재 담당:</b> ${E((t.owners||[]).join(' · ')||'확인 필요')}</p>${basisList(t.desc)}${b.note?`<p class="basis-note">${E(b.note)}</p>`:''}`;
+  const assignment=`<p class="muted">${E(b.assignment)} · ${b.page}쪽 · ${E(b.heading)}</p>${basisList(t.desc)}${b.note?`<p class="basis-note">${E(b.note)}</p>`:''}`;
   const plans=b.sections.length?b.sections.map((s,i)=>`<details class="basis-section" ${i===0?'open':''}><summary>${E(s.title)}</summary>${s.goal.length?`<h4>목적</h4>${basisList(s.goal)}`:''}${s.way.length?`<h4>운영 방침</h4>${basisList(s.way)}`:''}<p class="muted">${E(s.source||b.plan)}${s.page?' · '+E(s.page)+'쪽':''} · ${E(s.title)}</p></details>`).join(''):'<p class="muted">업무분장표에는 담당 업무가 있습니다. 교육계획서에서 직접 대응하는 절은 아직 확인하지 못했습니다.</p>';
   return acc('담당 업무 · 업무분장표','',assignment,true)+acc('운영 내용 · 교육계획서','',`${b.scope_note?`<p class="basis-note">${E(b.scope_note)}</p>`:''}${plans}`,false);
 }
@@ -15,7 +15,7 @@ function primarySchedule(t,m,year=2026){
   return (t.plan_schedule||[]).filter(x=>x.y===year&&(m==null||x.m===m));
 }
 function planDatesHtml(items){return items.length?`<div class="basis-note"><b>교육계획서에 적힌 일정</b>${basisList(items.map(x=>x.t))}<p class="muted">연간 계획에 적힌 예정입니다. 월중계획과 실제 시행 문서에서 변경 여부를 확인하세요.</p></div>`:'';}
-function scheduleHtml(items){return items.length?`<div class="basis-note"><b>월중계획</b>${basisList(items.map(x=>`${x.d?`${x.m}.${x.d} `:''}${x.t}`))}<p class="muted">월중계획에 기재된 일정입니다. 실시·완료 여부를 뜻하지 않습니다.</p></div>`:'';}
+function scheduleHtml(items){return items.length?`<div class="basis-note"><b>월중계획</b>${basisList(items.map(x=>`${x.d?`${x.m}.${x.d} `:''}${x.t}`))}<p class="muted">월중계획에 기재된 예정입니다. 실제 실시 결과는 결과보고에서 확인하세요.</p></div>`:'';}
 function evidenceEvents(task,month,year){
   const calendarYear=year+(month!=null&&month<=2?1:0);
   const from=month==null?`${year}-03-01`:`${calendarYear}-${String(month).padStart(2,'0')}-01`;
@@ -30,7 +30,7 @@ function vTask(){
   const tabs=`<div class="tchips">${T().map(x=>`<button class="${x.name===t.name?'on':''}" data-basis-task="${E(x.name)}">${E(taskLabel(x))}</button>`).join('')}</div>`;
   const docGroups=[ST.yr].map(y=>{
     const rows=docs.filter(g=>g.yr===y);
-    return acc(`${y}학년도 참고 기안·공문`,'',`<p class="muted">문서의 주제와 담당 업무를 대조해 모은 참고자료입니다. 문서가 있다는 이유로 업무가 완료되었다고 판단하지 않습니다.</p>${rows.length?more(rows.map(g=>gi(g)),5):'<p class="muted">연결된 문서가 없습니다.</p>'}`,false);
+    return acc(`${y}학년도 참고 기안·공문`,'',`<p class="muted">문서의 주제와 담당 업무를 대조해 모은 참고자료입니다. 실시 여부는 각 문서의 계획·결과 내용을 확인하세요.</p>${rows.length?more(rows.map(g=>gi(g)),5):'<p class="muted">연결된 문서가 없습니다.</p>'}`,false);
   }).join('');
   return `<div class="card"><h2>${E(taskLabel(t))}</h2><p class="muted">${E(RL().dept)} · 업무분장표와 교육계획서를 먼저 확인하세요.</p>${tabs}</div><div class="acs">${primaryHtml(t)}${acc('일정 · 계획과 시행 확인','',planDatesHtml(primarySchedule(t,null,ST.yr))+scheduleHtml((RL().WP||[]).filter(x=>x.y===ST.yr&&x.task===t.name))+evidenceEventsHtml(evidenceEvents(t.name,null,ST.yr))||'<p class="muted">현재 연결된 일정이 없습니다.</p>',false)}${docGroups}${acc('참고파일 이름','',`<p class="muted">학교 원자료의 파일명입니다. 공개 화면에서는 원본을 열지 않습니다.</p>${files.length?more(files.map(fr),8):'<p class="muted">연결된 파일이 없습니다.</p>'}`,false)}</div>`;
 }
@@ -45,7 +45,7 @@ function vCal(){
     if(!wp.length&&!ps.length&&!docs.length&&!events.length)return '';
     return `<details class="card cc"><summary><b>${E(taskLabel(t))}</b></summary>${planDatesHtml(ps)}${scheduleHtml(wp)}${evidenceEventsHtml(events)}${docs.length?`<h4>이 달에 등록된 참고 문서</h4><p class="muted">아래 날짜는 문서 등록일입니다. 행사일과 다를 수 있습니다.</p>${more(docs.map(g=>gi(g)),4)}`:''}<button class="mb" data-basis-task="${E(t.name)}">업무 기준과 운영 내용 보기</button></details>`;
   }).filter(Boolean);
-  return monthBar()+`<div class="card"><h2>${y}학년도 ${m}월</h2><p class="muted">교육계획서의 예정, 월중계획, 문서 등록 이력을 구분합니다.</p></div><div class="grid">${cards.join('')||'<div class="card">현재 연결된 일정·문서가 없습니다. 업무가 없다는 뜻은 아닙니다.</div>'}</div>`;
+  return monthBar()+`<div class="card"><h2>${y}학년도 ${m}월</h2><p class="muted">교육계획서의 예정, 월중계획, 문서 등록 이력을 구분합니다.</p></div><div class="grid">${cards.join('')||'<div class="card">현재 연결된 일정·문서가 없습니다. 업무 상세에서 담당 범위를 확인하세요.</div>'}</div>`;
 }
 function vTodo(){
   const m=ST.m,y=ST.yr;
@@ -55,7 +55,7 @@ function vTodo(){
     if(!wp.length&&!ps.length&&!events.length)return '';
     return `<details class="card cc"><summary><b>${E(taskLabel(t))}</b></summary>${planDatesHtml(ps)}${scheduleHtml(wp)}${evidenceEventsHtml(events)}<button class="mb" data-basis-task="${E(t.name)}">담당 업무 확인</button></details>`;
   }).filter(Boolean);
-  return monthBar()+`<div class="card"><h2>${m}월 계획 확인</h2><p>교육계획서와 월중계획에 적힌 내용을 확인하세요. 기안 유무로 완료를 표시하지 않습니다.</p></div><div class="grid">${blocks.join('')||'<div class="card">확인된 계획 일정이 없습니다. 업무 상세에서 담당 범위와 교육계획서를 확인하세요.</div>'}</div>`;
+  return monthBar()+`<div class="card"><h2>${m}월 계획 확인</h2><p>교육계획서와 월중계획에 적힌 예정입니다. 실제 실시 결과는 결과보고에서 확인하세요.</p></div><div class="grid">${blocks.join('')||'<div class="card">확인된 계획 일정이 없습니다. 업무 상세에서 담당 범위와 교육계획서를 확인하세요.</div>'}</div>`;
 }
 function vWork(){
   const body=ST.tab==='cal'?vCal():ST.tab==='task'?vTask():ST.tab==='todo'?vTodo():vSearch();
@@ -66,7 +66,7 @@ function openG(yr,no){
   if(!g){alert('현재 업무에서 해당 문서를 찾을 수 없습니다.');return;}
   $('#mdh').innerHTML=`<span class="chip">${g.yr}학년도 참고 문서</span><h3>${E(g.title)}</h3><p class="muted">등록일 ${E(g.date)} · 문서번호 ${E(g.no)}${g.att?' · 붙임: '+E(g.att):''}</p>`;
   const body=$('#mdb');body.textContent=g.body||'추출된 본문이 없습니다. 제목과 문서번호를 기준으로 원문을 확인하세요.';
-  if(g.matching_evidence){const evidence=document.createElement('div');evidence.className='basis-note';evidence.textContent='업무 연결 근거: '+g.matching_evidence.reason+'\n현재 담당: '+(basisTask(g.task)?.owners||[]).join(' · ')+'\n당시 기안자: '+(g.who||'대장 확인 필요');body.prepend(evidence);}
+  if(g.matching_evidence){const evidence=document.createElement('div');evidence.className='basis-note';evidence.textContent='업무 연결 근거: '+g.matching_evidence.reason;body.prepend(evidence);}
   if(g.body_note){const n=document.createElement('p');n.className='basis-note';n.textContent=g.body_note;body.append(n);}
   if(g.img){const button=document.createElement('button');button.className='chip';button.textContent='기안 화면 보기 (이름 가림)';button.onclick=()=>{const img=document.createElement('img');img.src=`img/${g.img==2?'y25_':''}${encodeURIComponent(g.no)}.webp`;img.alt='이름을 가린 기안 화면';img.style.cssText='width:100%;height:auto;margin-top:12px';button.replaceWith(img);};body.append(document.createElement('br'),button);}
   $('#md').style.display='flex';document.body.style.overflow='hidden';
