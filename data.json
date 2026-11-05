@@ -10832,22 +10832,38 @@
               {
                 "title": "20.(00초)학교교육과정 설계 점검 체크리스트_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1ZEO1ZKAArvgXRHVnVNDrr4u1m-VblXf-_gknSTCobco/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "교육과정 목표·수업일수·교과 편성·평가 점검 항목",
+                "caution": "2024·2025년 참고 기준이 포함되어 있습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "06.학사일정 관리 및 수업시수 편성 프로그램(초등용)_v1.0",
                 "url": "https://drive.google.com/file/d/1x7ury0lS-kebb88PHBBSvbKuzQvpO0eS/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학사일정·수업시수 편성 엑셀과 사용설명서",
+                "caution": "구성과 입력 항목을 확인했습니다. 매크로 실행·산출값은 검증하지 않았습니다.",
+                "review_status": "구성 확인 · 실행 미검증",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "37.학교자율시간 설계(워크시트)_v1.0",
                 "url": "https://drive.google.com/file/d/195XsyiuID1a7fFJtR7X4l0DyNXuujiO-/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교자율시간 주제·핵심 아이디어·성취기준·평가 설계",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "45. (00초)신학년집중준비기간 운영계획_v1.0",
                 "url": "https://drive.google.com/file/d/1QHKiEey6WkWhbSv-t_76XtIPOMMJ4axq/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "신학년 준비 일정·도움자료·교원학습공동체 집중연수 계획 3종",
+                "caution": "2023년 일정·교육과정 예시가 포함되어 있습니다. 당해 연도 준비기간과 연수 내용으로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -10918,12 +10934,20 @@
               {
                 "title": "23.(00초)예산집행현황_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "사업별 예산·집행액·잔액 관리표. 여러 사업에서 함께 쓰는 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -10989,14 +11013,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "74.교원학습공동체 수업 나눔(수업성장일지 서식 포함)_v1.0",
-                "url": "https://drive.google.com/file/d/1dunwmEOS6VQoaNrvCpVacBEuiEyBN-UT/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "74.교원학습공동체 수업 나눔(수업성장일지 서식 포함)_v1.0",
+                "url": "https://drive.google.com/file/d/1dunwmEOS6VQoaNrvCpVacBEuiEyBN-UT/view?usp=drivesdk",
+                "content_note": "수업 나눔 계획과 수업성장일지",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -11069,22 +11101,38 @@
               {
                 "title": "17.(초등학교)학교평가 평가지표_평가문항 예시 _v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1ROZSU4M6xkJs1QD9CSnFrhVkn4Ob3JkE/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교평가 영역별 지표와 학생·학부모·교직원 설문 예시",
+                "caution": "2025년 지표·문항 예시입니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "18.(00초)학교평가 자율점검표_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1mE0fZtkdzYHqw0EHSpMTfF-YWNpkCSwzgtZL1qh7oiQ/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교평가 계획·실행·결과 환류 점검표",
+                "caution": "2024년 결과·2025년 운영 기준 예시가 포함되어 있습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "19.학교평가 만족도 통계(그래프 쉽게 따라하기)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1U8o43FD4RfAT3ekL-TuD71whdLZf69h6ZQGEUSfkxug/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "만족도 조사 결과와 그래프 작성 예시",
+                "caution": "예시 응답값이 들어 있습니다. 실제 결과로 바꾸고 계산을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "70.(가정통신문)00초 학교평가 결과안내(예시 포함)_v1.0",
                 "url": "https://drive.google.com/file/d/1NnHMwC8gI2vBRHm8nz_Qh-WuklkAeqJh/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교평가 참여 현황·결과를 알리는 가정통신문",
+                "caution": "다른 학교의 예시 참여율·결과를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -11194,17 +11242,47 @@
               {
                 "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "핵심 아이디어·탐구 질문·수업 활동·평가·피드백 과정안",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "53.2022 개정 교육과정 적용 수업 참관록 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1mYeDBANQgKnETQn4TjDP2BqeQEJF9Rtb/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2022 개정 교육과정 수업 참관 기록",
+                "caution": "2025년 학년별 적용 안내가 포함되어 있어 올해 적용 학년을 다시 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "44.(00초)교내 자율연수 운영계획_v1.0",
                 "url": "https://drive.google.com/file/d/1nnQ9DS1xlHuZg10yyOlflpqE5His_Phz/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "매듭 체험을 주제로 한 교내 자율연수 운영 예시",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "48.(000초)교직원 연수 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1Nhi1eXU82zM74ckgEsimrFSVy7nT3nh6/view?usp=drivesdk",
+                "content_note": "지역 이해와 교육과정 연계를 위한 마을살이 교직원 연수",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "52.(00초)교직원_마을살이 문화 연수 계획_v1.0",
+                "url": "https://drive.google.com/file/d/1ht3XxdGTGv0aBTvwsxRYT5qG9JOrSmty/view?usp=drivesdk",
+                "content_note": "지역 연계 교육과정 설계를 위한 교직원 문화체험 연수",
+                "caution": "지역 연계 교육과정 목적의 연수입니다. 수업·장학 자료로 연결했습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27012,14 +27090,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "02.과학실 안전관리 점검표 등 각종 서식_v1.0",
-                "url": "https://drive.google.com/file/d/1nPCLiqe2O7nCrGoSYi7qa42xObvRNW9Z/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "02.과학실 안전관리 점검표 등 각종 서식_v1.0",
+                "url": "https://drive.google.com/file/d/1nPCLiqe2O7nCrGoSYi7qa42xObvRNW9Z/view?usp=drivesdk",
+                "content_note": "과학실 안전 점검과 운영 관련 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27107,22 +27193,38 @@
               {
                 "title": "06.개인정보 내부 관리계획_v1.0",
                 "url": "https://drive.google.com/file/d/1E60TFalpnFynTnNpurq9D3CMnl3gHrRj/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "개인정보 관리 조직·접근 통제·안전조치 계획",
+                "caution": "2025년 예시입니다. 학교 관리 조직과 현행 기준을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "07.개인정보 처리방침_v1.0",
                 "url": "https://drive.google.com/file/d/1iFwD3kVN6lwfOm71BPEFtrIliXI4ROKH/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교 개인정보 처리방침 작성 예시",
+                "caution": "2024년 참고 내용이 포함되어 있습니다. 학교의 처리 항목·위탁·담당 연락처를 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "33.(00초)2024학년도 개인정보 파기 계획(안)_V1.0",
                 "url": "https://drive.google.com/file/d/131Sb1a8wxinjr27qvZu22oq8wwm6dkLC/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "개인정보 파기 대상·일정·방법 계획",
+                "caution": "2024학년도 예시와 2025년 파기 일정이 포함되어 있습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "35.2025 개인정보파일 표준목록 합산 통계_V1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1ECwV_2JZ9x2RDXf2E7b024yduzdeV6Otm-AcGc5hHME/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "개인정보파일 항목·보유기간·건수 목록",
+                "caution": "실제 학교의 파일 목록·보유기간·건수로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27227,12 +27329,11 @@
               {
                 "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "48.(000초)교직원 연수 계획_v1.0",
-                "url": "https://drive.google.com/file/d/1Nhi1eXU82zM74ckgEsimrFSVy7nT3nh6/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "핵심 아이디어·탐구 질문·수업 활동·평가·피드백 과정안",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27318,7 +27419,11 @@
               {
                 "title": "51.범교과 편성 예시_v1.0",
                 "url": "https://drive.google.com/file/d/1Hotoj33Xnlso2mi3kX6JC-rWG_FCWhEr/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "범교과 주제별 시수와 교과·창체 연계 편성 예시",
+                "caution": "예시 시수입니다. 올해 지침과 학교교육계획을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27388,12 +27493,20 @@
               {
                 "title": "28.(00초)물품 용역 통합선정위원회 회의 자료(전자칠판)_V1.0",
                 "url": "https://drive.google.com/file/d/1Wxk_uHJRmG-KQP52TbKrkenL-IHEe-3U/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "전자칠판 선정을 위한 위원회 심의 자료",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "39.(00초)2022년 학교 정보화기기 보급 및 관리방안_V1.0",
                 "url": "https://drive.google.com/file/d/1loEIP11g5TQFAx5MW5efGi5JEnK-lILN/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2022년 정보화기기 보급·관리 방안 예시",
+                "caution": "2022년 사양·가격 예시이므로 현재 구매 기준과 대조하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27489,24 +27602,40 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "38.(00초)학습준비물실 이용 현황_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1ZkII7uUeRemn8XIFRnT1zFymIkPxIFAGG2cdq-iN43s/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "02.과학실 안전관리 점검표 등 각종 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1nPCLiqe2O7nCrGoSYi7qa42xObvRNW9Z/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "과학실 안전 점검과 운영 관련 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "38.(00초)학습준비물실 이용 현황_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1ZkII7uUeRemn8XIFRnT1zFymIkPxIFAGG2cdq-iN43s/view",
+                "content_note": "학습준비물 대여·이용 기록",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "40.(00초)학습준비물 지원센터 운영 안내_V1.0",
                 "url": "https://drive.google.com/file/d/1Jz1W7Dnpw3iRivUCvNuQfO-ciWNsis_2/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학습준비물 지원센터 운영시간·이용 절차 안내",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "42.(00초)24년도 1학기 학년별 학습준비물 구입 내역_V1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1M906FScA7UZ6RbKSSXLIVQVYFN5TAqWve1uLMfg9a6k/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학년별 준비물 품목·수량·단가·구입 내역",
+                "caution": "2024년 구입 예시입니다. 품목·수량·가격을 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -27594,17 +27723,29 @@
               {
                 "title": "30.(가정통신문)「디벗」 기기 배부 및 안전한 사용을 위한 개인정보 수집·이용 동의 안내_V1.0",
                 "url": "https://drive.google.com/file/d/1fQz_80irU-4hUcG03VHxUL0WbPCBEGNG/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "디벗 기기 배부와 개인정보 수집·이용 동의 안내",
+                "caution": "2025년 학년·배부일·제출기한 예시입니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "31.(가정통신문)교육용 Google Workspace 이용을 위한 개인정보 수집·이용 및 동의 안내_V1.0",
                 "url": "https://drive.google.com/file/d/1XDDbxAboQVVwElcX7pw8QObvjM3XcpSy/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "교육용 Google Workspace 이용 동의 안내",
+                "caution": "2024년 학교명·제출일 예시가 포함되어 있습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "01.학교 구글 계정 생성 및 관리_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1L9CvrGbHMTWPJdt6ES02lMmid-PazwK76ibhr2aVPEI/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교 Google 계정 일괄 생성·입학연도별 관리 양식",
+                "caution": "예시 계정과 초기 비밀번호를 실제 운영에 그대로 쓰지 마세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -35924,17 +36065,29 @@
               {
                 "title": "14.(00초) 학부모총회 학부모 연수자료_v1.0",
                 "url": "https://drive.google.com/file/d/1V9NxzXPtxdC3bCIpqyMzU7uOOL-GpaCv/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2025년 다른 학교의 학사 안내·학부모 총회 연수자료",
+                "caution": "학교명·학사일정·제도 안내를 가동초의 해당 연도 내용으로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "55.(00초) 1학년 학부모 연수 PPT_v1.0",
                 "url": "https://docs.google.com/presentation/d/11wvLJM6sPXTvje7xziOMOCfgBnRaIl1Vd6diilzeZKA/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "신입생 학교생활·입학 준비·학부모 연수 발표자료",
+                "caution": "학교별 준비물·시정·인물·연도 예시를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
                 "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모 연수 출석부와 교육공동체 협의회 참석자 명단",
+                "caution": "학부모 뜨개질 연수 예시입니다. 연수명과 날짜를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36008,14 +36161,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "58.(00초) (가정통신문)신입생 학교생활준비물 및 학습준비물 안내_v1.0",
-                "url": "https://drive.google.com/file/d/1y5JYATZoGo8VmnaTgrWsOKGmcWsSWqsJ/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "55.(00초) 1학년 학부모 연수 PPT_v1.0",
                 "url": "https://docs.google.com/presentation/d/11wvLJM6sPXTvje7xziOMOCfgBnRaIl1Vd6diilzeZKA/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "신입생 학교생활·입학 준비·학부모 연수 발표자료",
+                "caution": "학교별 준비물·시정·인물·연도 예시를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "58.(00초) (가정통신문)신입생 학교생활준비물 및 학습준비물 안내_v1.0",
+                "url": "https://drive.google.com/file/d/1y5JYATZoGo8VmnaTgrWsOKGmcWsSWqsJ/view?usp=drivesdk",
+                "content_note": "신입생 개인 준비물·학교 지원 학습준비물 안내",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36083,14 +36244,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "72.(00초)학교규칙 제개정 계획(안)_v1.0",
-                "url": "https://drive.google.com/file/d/1J4wLRRMhErr9BVFwfi-rD4mNnEJYBpMI/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "72.(00초)학교규칙 제개정 계획(안)_v1.0",
+                "url": "https://drive.google.com/file/d/1J4wLRRMhErr9BVFwfi-rD4mNnEJYBpMI/view?usp=drivesdk",
+                "content_note": "학교규칙 개정 의견 수렴·검토·심의 절차 예시",
+                "caution": "과거 참고 규정이 포함되어 있습니다. 현행 학교규칙과 개정 절차를 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36162,22 +36331,38 @@
               {
                 "title": "07.(00초)일일업무(가로형) 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1lqXfysYd2j6XMbIj7PJMLVtiWZR0vcRE/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "오늘·내일 일정과 전달사항을 적는 일일업무 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "08.(00초) 월중계획(예시포함)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/13ZtRV3NgdSOvJtsb2DuVlvV97WNkOzmuySz3PYxzZH4/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "월별 날짜·교육활동을 정리하는 월중계획 양식",
+                "caution": "입력된 행사·개인 연수 등 예시 일정은 가동초의 업무 일정에 반영하지 않았습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "05.(00초)2026 학사일정(A)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1QunYkMhpECBYhIYYkSX1KkBDbwb13bsaT8XIG8PzwQU/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2026 학사일정으로 표시된 연간 일정표",
+                "caution": "날짜·요일 불일치: 2026년 5월 6일은 수요일, 8월 15일은 토요일입니다. 원본의 월·금 표기를 포함해 일정을 다시 작성해야 합니다.",
+                "review_status": "수정 후 활용",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "47.(00초)겨울방학 계획서_v1.0",
                 "url": "https://drive.google.com/file/d/1J1NPkd02IJtan-aCSor3OdvQ4OrXavij/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "겨울방학 교육활동·안전·학교 운영 계획 예시",
+                "caution": "2024·2025년 예시입니다. 방학일·프로그램·담당 역할을 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36244,22 +36429,38 @@
               {
                 "title": "62.(00초)학부모회 구성 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1EPE0qSy6tiF2GSptKV_LjOYXDulWHr6f/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모회 구성과 임원 선출 계획",
+                "caution": "2025년 구성 예시입니다. 학교 학부모회 규약을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "63.(00초)학부모회 선출관리위원회 명단_v1.0",
                 "url": "https://drive.google.com/file/d/1-o8_rTPOANb4aDQBBw9qbdlBokMVhuvD/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모회 선출관리위원 명단",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "64.(00초)(가정통신문)학부모회 임원 당선 안내_v1.0",
                 "url": "https://drive.google.com/file/d/1aBWzsAgt9Q2O9AogSExd3vLC52l170WG/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모회 임원 무투표 당선 안내 예시",
+                "caution": "무투표 당선 예시이며 학교명·선출 결과 교체가 필요합니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "65.(00초)학부모회임원_당선통지서_v1.0",
                 "url": "https://drive.google.com/file/d/1QAeAxS9uZt2xnT0hGqabWs_4Ukx5Xats/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모회 임원 당선통지서",
+                "caution": "연도 표기가 섞여 있습니다. 임원·임기·발급일을 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36332,7 +36533,11 @@
               {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36407,18 +36612,7 @@
               36
             ],
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
-            "forms": [
-              {
-                "title": "48.(000초)교직원 연수 계획_v1.0",
-                "url": "https://drive.google.com/file/d/1Nhi1eXU82zM74ckgEsimrFSVy7nT3nh6/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
-                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              }
-            ],
+            "forms": [],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
             "note": "",
             "manual_status": "관련 업무 절 참고",
@@ -36478,7 +36672,11 @@
               {
                 "title": "61.(00초)교육활동 보호 계획_v1.0",
                 "url": "https://drive.google.com/file/d/18K3xBa6kZq0pgH8ztLKppIVXzHVlDCgJ/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2025 교육활동 보호 운영 계획 예시",
+                "caution": "2025년 예시입니다. 올해 안내와 학교 보호 계획을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -36614,22 +36812,38 @@
               {
                 "title": "56.(00초)졸업식 추진계획_v1.0",
                 "url": "https://drive.google.com/file/d/14XRLWJDOu1X7zVMLSAr1AN7vSe3lYqZ-/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "졸업식 일정·준비·역할 분담 계획",
+                "caution": "다른 학교의 2024·2025년 일정·인원 예시를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "59.(00초)입학식 식순진행 PPT_v1.0",
                 "url": "https://docs.google.com/presentation/d/1VCBQSpX6I3ogwyrwOEsPpqo8ACzmJdnHtlW_gjMrGQA/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "입학식 순서와 진행 화면",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "09.(00초)부장회의록_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1nxFiwMt9hg9VLyXMsZlOShlQBt1C2yQGUOpkPhOAZPs/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "부서 전달사항·협의 안건을 기록하는 부장회의록",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "15.신학년 분반 프로그램(초등용)_v1.0",
                 "url": "https://drive.google.com/file/d/15Ol-J5gSFwdCC9dHiAv5f_rf4RSgXnR9/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "신학년 분반 엑셀과 분반·합반 조건 및 조정 사용설명서",
+                "caution": "사용설명서와 파일 구성을 확인했습니다. 매크로 실행·배정 결과는 검증하지 않았습니다.",
+                "review_status": "구성 확인 · 실행 미검증",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -38909,12 +39123,11 @@
               {
                 "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
                 "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "33.(00초)협력강사 공개채용_계획_공고_v1.0",
-                "url": "https://drive.google.com/file/d/1qMYBKIt5bnoY18cQymX6cHAUvm0sKlC0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학생맞춤 통합지원팀 회의 일시·안건·협의·결정 기록",
+                "caution": "학생맞춤 통합지원팀용 양식입니다. 별도 기초학력 위원회 서식 연결은 해제했습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -38992,7 +39205,11 @@
               {
                 "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
                 "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학생맞춤 통합지원팀 회의 일시·안건·협의·결정 기록",
+                "caution": "학생맞춤 통합지원팀용 양식입니다. 별도 기초학력 위원회 서식 연결은 해제했습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -39086,7 +39303,11 @@
               {
                 "title": "51.범교과 편성 예시_v1.0",
                 "url": "https://drive.google.com/file/d/1Hotoj33Xnlso2mi3kX6JC-rWG_FCWhEr/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "범교과 주제별 시수와 교과·창체 연계 편성 예시",
+                "caution": "예시 시수입니다. 올해 지침과 학교교육계획을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -43267,12 +43488,20 @@
               {
                 "title": "23. 2026학년도 인성교육계획안_v1.0",
                 "url": "https://drive.google.com/file/d/1GoiopiNcmIbZXy2C19D1-NbLcqWbK0aW/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2026 인성교육 목표·학년 활동·학생 참여 계획",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "04.「학생생활규정 길라잡이(2025 개정판)」-전체서식_v1.0",
                 "url": "https://drive.google.com/file/d/167zpNkKqsZD22el3iEM-KmzuHziknzC8/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학생생활규정 관련 사안 기록·확인·위원회 양식",
+                "caution": "2025년 자료입니다. 현행 학교 규정과 해당 사안의 절차를 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -43362,22 +43591,38 @@
               {
                 "title": "06. 2025학년도 학교폭력 전담기구 구성 및 운영 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1sIpGQh5VYKxWIc4Qaz9kyg9nPq9mUL-0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2025 학교폭력 전담기구 구성·운영 계획",
+                "caution": "2025년 예시입니다. 올해 구성원·임기·처리 기준을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "07. 학교폭력 전담기구 비밀유지서약서-양식_v1.0",
                 "url": "https://drive.google.com/file/d/1cCapJu0Wc9yjKjB2ff-MOd3_P52IOJPX/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교폭력 전담기구 위원 비밀유지서약서",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "26.12_1 (붙임4) 학교폭력 사안처리 절차 자체 점검표(서식)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1xdjaz8E2O3UGz3Ynfk3RcUdXa4SHWYWv/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학교폭력 사안처리 단계별 확인표",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "25. 2025 학교폭력 생활교육 업무 담당자를 위한 알쓸소중(한글 주요 양식 모음)_v1.0",
                 "url": "https://drive.google.com/file/d/1cbxXfkBHFlGFGDst2lmUlM0C6SBMULEV/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2025 학교폭력 전담기구 운영·사안처리 공문과 주요 양식",
+                "caution": "2025년 자료입니다. 최신 사안처리 안내와 대조하여 사용하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -43462,17 +43707,29 @@
               {
                 "title": "19. 2025 OO초 화재 대피 훈련 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1iHh46dGqRocaVp1LC3inEAbTMV4h0ify/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "화재 대피훈련 순서·대피 경로·역할 분담 계획",
+                "caution": "예시 날짜와 학교별 대피 경로·역할을 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "20_1 2025년 지진대피 및 화재대비 민방위훈련 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1WAMwL484fkShDLVxivyOQVDg7NfFjVM2/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "지진·화재 대피훈련 상황·방송·대피·사후 교육 계획",
+                "caution": "2025년 훈련 예시입니다. 학교의 실제 훈련 상황에 맞춰 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "27. 안전점검의 날 체크리스트(0월)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1uPW5VtfSrHHxD-6ZAo1VQyMzV8ZLJVTDSuP2-427wvU/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "교실·복도 등 안전점검 항목",
+                "caution": "예시 월·점검일을 실제 점검일로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -47788,12 +48045,38 @@
               {
                 "title": "23.(00초)예산집행현황_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "사업별 예산·집행액·잔액 관리표. 여러 사업에서 함께 쓰는 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "33.(00초)협력강사 공개채용_계획_공고_v1.0",
+                "url": "https://drive.google.com/file/d/1qMYBKIt5bnoY18cQymX6cHAUvm0sKlC0/view?usp=drivesdk",
+                "content_note": "체육 협력강사 공개채용 계획·공고·지원서·교육활동 계획서",
+                "caution": "체육 강사 채용 예시입니다. 채용 분야·일정·요건과 개인정보 동의 항목을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "content_note": "기초협력·예술·체육·AI/메이커 강사 시수·예산·학년별 일정",
+                "caution": "2024년 일정·예산 예시와 #REF! 오류가 있습니다. 날짜 및 수식 참조를 고친 뒤 사용하세요.",
+                "review_status": "수정 후 활용",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -47884,12 +48167,20 @@
               {
                 "title": "23.(00초)예산집행현황_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "사업별 예산·집행액·잔액 관리표. 여러 사업에서 함께 쓰는 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -47963,12 +48254,11 @@
               {
                 "title": "23.(00초)예산집행현황_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1m6kSsrYTs1heXzoA0aY_I0Ocwbcm-bFzgv4OIrpvNJY/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "33.(00초)협력강사 공개채용_계획_공고_v1.0",
-                "url": "https://drive.google.com/file/d/1qMYBKIt5bnoY18cQymX6cHAUvm0sKlC0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "사업별 예산·집행액·잔액 관리표. 여러 사업에서 함께 쓰는 양식",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -50153,19 +50443,31 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "01.(00초)학생 참여형 수업 운영 예산 사용 내역_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1mwJBhn5rfki47d5fLF6J3dAzXHmrh4fo7YvE5-q3qro/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "41.2022 개정 교육과정 적용 교수 학습 과정안 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1TXSM-XL6mlwirkvc5PEWcz32E2Wpw3a7/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "핵심 아이디어·탐구 질문·수업 활동·평가·피드백 과정안",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "01.(00초)학생 참여형 수업 운영 예산 사용 내역_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1mwJBhn5rfki47d5fLF6J3dAzXHmrh4fo7YvE5-q3qro/view",
+                "content_note": "학생 참여형 수업 예산 품목·집행 내역",
+                "caution": "예시 예산·집행액을 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "43.(00초)2000학년도 0학기 현장체험학습 계획(학년, 학급)_v1.0",
                 "url": "https://drive.google.com/file/d/1dDEXVZaPyP7_pRRkBEVJvlfYct_kaQeF/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학급·학년 현장체험 일정·인솔·안전·참가 안내 예시",
+                "caution": "다른 지역 체험처·이동·학생 수 예시를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -50971,12 +51273,20 @@
               {
                 "title": "54.(00초)학생자치회의록(전교, 학급)_v1.0",
                 "url": "https://drive.google.com/file/d/1yOtLIET1aN2w8iPcxJzdejMgFxFI7Kjn/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "전교·학급 학생자치 회의록과 연간 일정",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "31.임명장_v1.0",
                 "url": "https://drive.google.com/file/d/1Vsp0c9M2wUbLJw6HRAWGWpd7PqmAcCtp/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "전교·학급 어린이회 학생 임명장",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -52474,7 +52784,11 @@
               {
                 "title": "12.(00초)4세대 나이스 학기말 성적 업무처리 체크리스트_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1Op6rew3f3xMuhIAAdOQB0lRh9HvksFUXb8fuW8RaCio/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학기말 성적·기록 입력 및 확인 항목",
+                "caution": "예시 마감일을 올해 학교 일정과 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -52814,19 +53128,31 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
+                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
+                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
+                "content_note": "학부모 연수 출석부와 교육공동체 협의회 참석자 명단",
+                "caution": "학부모 뜨개질 연수 예시입니다. 연수명과 날짜를 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
                 "title": "46.(00초)학부모연수 운영계획(2종)_v1.0",
                 "url": "https://drive.google.com/file/d/1_TfFxQaG6Es3bmaufwhQe_DopZj6GzzE/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학부모 연수 운영계획 2종. 심폐소생술·응급처치 연수 예시 포함",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "69.(00초)학부모연수 만족도 조사_v1.0",
-                "url": "https://docs.google.com/forms/d/10o9j2udNjPbGI1cWHEfcpUN8to5pyZ-5aO4Bv-hezhk/viewform",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "22.(00초)연수서명부_참석자 명단(서식)_v1.0",
-                "url": "https://drive.google.com/file/d/1Y8GD4sHB_UBzKd3SWbI__Qx8EvcsfIj0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "url": "https://docs.google.com/forms/u/0/d/10o9j2udNjPbGI1cWHEfcpUN8to5pyZ-5aO4Bv-hezhk/preview",
+                "content_note": "연수 내용·강사·운영 만족도와 자유 의견 설문",
+                "caution": "강사 만족도에 불필요한 ‘옵션 6’이 남아 있습니다. 연수명·날짜와 함께 수정 후 사용하세요.",
+                "review_status": "수정 후 활용",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -53746,13 +54072,7 @@
               75
             ],
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
-            "forms": [
-              {
-                "title": "18. 2025학년도 학생맞춤 통합지원팀 회의록(서식)_v1.0",
-                "url": "https://drive.google.com/file/d/1cpWF_140S-7l686IE_DlMlUy0B_uhXA0/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              }
-            ],
+            "forms": [],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
             "note": "",
             "manual_status": "관련 업무 절 참고",
@@ -54251,14 +54571,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
+                "content_note": "기초협력·예술·체육·AI/메이커 강사 시수·예산·학년별 일정",
+                "caution": "2024년 일정·예산 예시와 #REF! 오류가 있습니다. 날짜 및 수식 참조를 고친 뒤 사용하세요.",
+                "review_status": "수정 후 활용",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -57164,24 +57492,40 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
+                "title": "12.(00초)4세대 나이스 학기말 성적 업무처리 체크리스트_v1.0",
+                "url": "https://docs.google.com/spreadsheets/d/1Op6rew3f3xMuhIAAdOQB0lRh9HvksFUXb8fuW8RaCio/view",
+                "content_note": "학기말 성적·기록 입력 및 확인 항목",
+                "caution": "예시 마감일을 올해 학교 일정과 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
                 "title": "16.2022 개정 교육과정 1~4학년 평가계획 도움자료_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/14wXf5UKxxeZXn4GQlUEDvapKgjDJJsOG/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2022 개정 교육과정 1~4학년 성취기준·평가계획 도움자료",
+                "caution": "1~4학년용입니다. 5~6학년은 별도 자료가 필요합니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "21.(00초)학생평가 자체 모니터링 결과_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1Q-yabUAKkdXPeeo4bncP8ttGivyeGd0FGH1VzGfVXLo/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "평가 계획·안내·실시·피드백·이의신청 자체 점검",
+                "caution": "2025년 참고 기준이 포함되어 있습니다.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "49.(00초)학생 평가 이의 신청서_v1.0",
                 "url": "https://drive.google.com/file/d/1oXbxnf2uYwA2ea97XyDArKi9pYIyOMcO/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
-                "title": "12.(00초)4세대 나이스 학기말 성적 업무처리 체크리스트_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1Op6rew3f3xMuhIAAdOQB0lRh9HvksFUXb8fuW8RaCio/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "평가 결과 이의신청 사유·신청인 기록 양식",
+                "caution": "예시 이의신청 기한은 3일입니다. 학교 학업성적관리 규정에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -57626,12 +57970,20 @@
               {
                 "title": "25.(00초)교과용도서 선정 심사 프로그램 _v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/15Lm2jpp-tjLVX1VjKEOE4R-q8B8k8K-zTY1DA-th04g/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "교과서 발행사별 선정 기준·점수·집계 양식",
+                "caution": "선정 항목과 집계 구성을 확인했습니다. 계산 결과는 별도 검증이 필요합니다.",
+                "review_status": "구성 확인 · 실행 미검증",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "04.학생 선택(선착순) 기반 반(동아리) 배정 프로그램_v1.0",
                 "url": "https://drive.google.com/file/d/18Du2UszHCrXGx4KRKX_Vz1kE4lwtn7en/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "희망 순위·신청 시각에 따른 반·동아리 배정 자료와 설문 예시",
+                "caution": "중학교 자유학기제 예시가 포함되어 있습니다. 초등 동아리 내용·학번 형식으로 바꾸세요. 프로그램 실행은 검증하지 않았습니다.",
+                "review_status": "구성 확인 · 실행 미검증",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -58779,13 +59131,7 @@
               178
             ],
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
-            "forms": [
-              {
-                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              }
-            ],
+            "forms": [],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
             "note": "교육계획서는 영어교육을 설명합니다. 부장업무 자료 178쪽은 악기 관리 참고이며, 영어강사·캠프 설명은 학교 자료를 따릅니다.",
             "manual_status": "관련 업무 절 참고",
@@ -59724,22 +60070,38 @@
               {
                 "title": "04.2024 개정 영재교육 실무편람 각종 서식_v1.0",
                 "url": "https://drive.google.com/file/d/1_BHfeOcPEiP5mxTU-0T3bg92DmlWEEZS/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2024 영재교육 출석·평가·수료·동의·운영 서식 모음",
+                "caution": "2024년 편람입니다. 올해 운영·선발 안내와 대조하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "19.지원청 과학·발명교육프로그램 가정통신문(추첨)_V1.0",
                 "url": "https://drive.google.com/file/d/1-Zr0zgBXKiwUOu5hsvp4RLl6ifWinSna/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "발명메이커 과정 참가 신청과 추첨 안내 예시",
+                "caution": "2024년 날짜·추천 인원 예시를 올해 모집 공문과 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "21.발명, 영재원 등 교과세특 입력 안내_V1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1_tRHp3yTTY3LA4_SSb02qjUSCG2NjJmIYBKtbeaik_U/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "발명·영재 이수내용의 학생 기록 입력 확인표",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "22.2024학년도 교내 학생과학발명품경진대회 실시 계획(안)_V1.0",
                 "url": "https://drive.google.com/file/d/1NErWN_BgTRu_gHZaUUzMiYi6sBF5Ecrc/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "2024 교내 과학발명품경진대회 계획·출품 절차",
+                "caution": "2024년 일정·출품 요건 예시입니다. 올해 대회 공문을 확인하세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -59895,14 +60257,22 @@
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
             "forms": [
               {
-                "title": "34.방송조회 PPT_v1.0",
-                "url": "https://docs.google.com/presentation/d/1X_dP0eeDd0Ut-qYPEW6uaAkF8KPnn1WFcJyONOR9_YY/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              },
-              {
                 "title": "59.(00초)입학식 식순진행 PPT_v1.0",
                 "url": "https://docs.google.com/presentation/d/1VCBQSpX6I3ogwyrwOEsPpqo8ACzmJdnHtlW_gjMrGQA/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "입학식 순서와 진행 화면",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
+              },
+              {
+                "title": "34.방송조회 PPT_v1.0",
+                "url": "https://docs.google.com/presentation/d/1X_dP0eeDd0Ut-qYPEW6uaAkF8KPnn1WFcJyONOR9_YY/view",
+                "content_note": "방송조회 진행 발표자료",
+                "caution": "반복된 학년 예시와 발표 내용을 실제 방송 내용으로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -60815,17 +61185,29 @@
               {
                 "title": "19. 2025 OO초 화재 대피 훈련 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1iHh46dGqRocaVp1LC3inEAbTMV4h0ify/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "화재 대피훈련 순서·대피 경로·역할 분담 계획",
+                "caution": "예시 날짜와 학교별 대피 경로·역할을 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "20_1 2025년 지진대피 및 화재대비 민방위훈련 계획_v1.0",
                 "url": "https://drive.google.com/file/d/1WAMwL484fkShDLVxivyOQVDg7NfFjVM2/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "지진·화재 대피훈련 상황·방송·대피·사후 교육 계획",
+                "caution": "2025년 훈련 예시입니다. 학교의 실제 훈련 상황에 맞춰 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "27. 안전점검의 날 체크리스트(0월)_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1uPW5VtfSrHHxD-6ZAo1VQyMzV8ZLJVTDSuP2-427wvU/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "교실·복도 등 안전점검 항목",
+                "caution": "예시 월·점검일을 실제 점검일로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -62985,12 +63367,20 @@
               {
                 "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
                 "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "기초협력·예술·체육·AI/메이커 강사 시수·예산·학년별 일정",
+                "caution": "2024년 일정·예산 예시와 #REF! 오류가 있습니다. 날짜 및 수식 참조를 고친 뒤 사용하세요.",
+                "review_status": "수정 후 활용",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               },
               {
                 "title": "30.(00초)학예회 운영계획(안)_v1.0",
                 "url": "https://drive.google.com/file/d/19fPOhpoBjPz6R1cE_ijrZm4canc3swjC/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "학년별 공연·전시·준비·역할 분담을 담은 학예회 계획",
+                "caution": "예시 날짜·교육과정·프로그램·역할을 가동초 운영 내용으로 바꾸세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -64190,13 +64580,7 @@
               157
             ],
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
-            "forms": [
-              {
-                "title": "24.(00초)각종 협력강사 시수_수업현황 정리_v1.0",
-                "url": "https://docs.google.com/spreadsheets/d/1vuYL1kYH49Ki0wxH_QHpLh1hJYqi8_T8/view",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              }
-            ],
+            "forms": [],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
             "note": "현재 서식 목록에서는 생존수영 전용 서식을 확인하지 못했습니다. 강사 시수 서식은 1학생 1스포츠 운영에 활용합니다.",
             "manual_status": "관련 업무 절 참고",
@@ -64640,13 +65024,7 @@
             ],
             "manual_pages": [],
             "manual_source": "(강동송파)2026 부장업무함께해요(배포용)",
-            "forms": [
-              {
-                "title": "52.(00초)교직원_마을살이 문화 연수 계획_v1.0",
-                "url": "https://drive.google.com/file/d/1ht3XxdGTGv0aBTvwsxRYT5qG9JOrSmty/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
-              }
-            ],
+            "forms": [],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
             "note": "공동 상조회·친목연수 업무만 안내합니다. 개인 연수·신청 등 개인 사유 문서는 제외합니다.",
             "manual_status": "직접 대응하는 절 미확인 · 업무분장과 학교교육계획서로 설명",
@@ -65898,7 +66276,11 @@
               {
                 "title": "27.(00초)회의 결과 보고_v1.0",
                 "url": "https://drive.google.com/file/d/1goLx1quCN8VEd2cqqhP1SliqPBDm7_0O/view?usp=drivesdk",
-                "verified": "원본 목록의 제목·링크 확인; 파일 본문 미검토"
+                "content_note": "회의 안건·참석자·협의 결과 기록. 위원회별 내용 교체 필요",
+                "caution": "학교명·일정·대상·금액 등 예시값을 실제 운영 내용에 맞추세요.",
+                "review_status": "본문·항목 확인",
+                "reviewed_at": "2026-11-05",
+                "verified": true
               }
             ],
             "forms_source": "https://sites.google.com/senedu.kr/support/초등-업무-서식",
@@ -66524,8 +66906,11 @@
     "assignment": "2026.9.1. 업무분장표",
     "tasks": 54,
     "manual_tasks": 46,
-    "form_tasks": 46,
+    "form_tasks": 41,
     "unique_forms": 78,
-    "limits": "서식은 원본 목록의 제목과 URL로 선별했습니다. 개별 서식 본문과 접근 권한은 미검토이며 작성 시 원본의 연도와 적용 범위를 확인합니다. 기존 기안의 전수 재검증은 이번 작업에 포함하지 않았습니다."
+    "limits": "78종 원본의 본문·항목·구성을 읽고 업무 연결을 검토했습니다. 프로그램 실행·계산 결과 및 법령의 최신성은 검증 범위에 포함하지 않았습니다. 예시 일정은 학교 업무 일정에 옮기지 않았습니다.",
+    "forms_content_checked": 78,
+    "forms_mapping_reviewed": 78,
+    "forms_mapping_changed": 6
   }
 }
