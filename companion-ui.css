@@ -95,3 +95,24 @@ body[data-month="12"],body[data-month="1"],body[data-month="2"]{--season-accent:
 @media(max-width:1000px){.assignment-card{grid-template-columns:145px repeat(3,minmax(0,1fr))}.assignment-card h2{grid-row:span 2}.assignment-heading{display:block}.assignment-heading p{margin-top:4px}.assignment-role strong{font-size:19px}}
 @media(max-width:600px){.assignment-home{padding:12px}.assignment-heading{padding:12px 14px}.assignment-heading h1{font-size:26px}.assignment-heading p{font-size:17px}.assignment-depts{gap:5px}.assignment-depts button{font-size:16px;padding:6px 9px}.assignment-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:0 8px 8px}.assignment-card h2{grid-column:1/-1;grid-row:auto;margin:0 -8px 3px;padding:10px 14px;border:0;font-size:20px}.assignment-role{min-height:46px;margin:3px;padding:8px 4px;border-color:#e0e7dc}.assignment-role strong{font-size:18px}}
 .assignment-grid{align-items:stretch}.assignment-card{width:100%;box-sizing:border-box}
+
+/* Click to approach, then explain. */
+#companion-slot.assignment-companion{position:fixed;right:18px;bottom:8px;top:auto;width:170px;z-index:45}
+.assignment-companion .companion-inner{padding:0}
+.assignment-companion .juri-character{width:170px;margin:0}
+.assignment-companion .guide-bubble{position:absolute;bottom:168px;right:95px;width:340px;max-height:410px}
+.companion.has-arrived .juri-character{transform:translateX(-110px)}
+.companion.is-collapsed:not(.has-arrived) .juri-character{transform:none}
+.companion .guide-bubble{transition:opacity .35s,transform .35s;}
+.companion.is-walking .juri-figure{animation:juriWalkBody .32s ease-in-out infinite}
+.companion.is-walking .part-armL{animation:juriWalkArm .64s ease-in-out infinite}
+.companion.is-walking .part-armR{animation:juriWalkArm .64s ease-in-out infinite reverse}
+.juri-step{display:none;position:absolute;inset:0;width:100%;height:auto;pointer-events:none}
+.is-walking .part-base{clip-path:inset(0 0 14% 0)}
+.is-walking .juri-step{display:block}
+.is-walking .step-left{clip-path:polygon(22% 86%,49% 86%,49% 100%,22% 100%);animation:juriLeftStep .64s ease-in-out infinite}
+.is-walking .step-right{clip-path:polygon(49% 86%,74% 86%,74% 100%,49% 100%);animation:juriLeftStep .64s ease-in-out infinite reverse}
+@keyframes juriWalkBody{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-5px) rotate(1deg)}}
+@keyframes juriWalkArm{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+@keyframes juriLeftStep{0%,100%{transform:translate(0,0)}25%{transform:translate(-10px,-8px)}50%{transform:translate(-14px,0)}75%{transform:translate(5px,0)}}
+@media(max-width:720px){#companion-slot.assignment-companion{width:110px;right:8px}.assignment-companion .juri-character{width:110px}.assignment-companion .guide-bubble{right:0;bottom:115px;width:min(320px,calc(100vw - 30px))}}
