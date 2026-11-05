@@ -25,19 +25,6 @@ vWork=function(){
 };
 const originalWorkspaceRender=render;
 render=function(){originalWorkspaceRender();if(ST.tab==='search')doSearch();};
-function evidenceStatus(g){
- const e=g.matching_evidence||{};
- return [e.individual_review?'개별 검토 기록 있음':'연결 근거 기록 있음',e.attachment_contents_verified?'첨부 내용 확인 기록 있음':'첨부 내용 확인 미완료'];
-}
-const originalWorkspaceOpen=openG;
-openG=function(yr,no){
- originalWorkspaceOpen(yr,no);
- const g=DB.G.find(x=>x.yr==yr&&String(x.no)===String(no));if(!g)return;
- const panel=document.createElement('div');panel.className='basis-note';
- const e=g.matching_evidence||{};
- panel.textContent=evidenceStatus(g).join(' · ')+'\n교육계획서 연결: '+((e.plan_section_titles||[]).join(' · ')||'직접 대응하는 절 미확인')+'\n검토 기록일: '+(e.reviewed_at?e.reviewed_at.slice(0,10):'미기록');
- $('#mdb').prepend(panel);
-};
 // Search follows the selected school year; changing years re-runs the query.
 doSearch=function(){
  const q=ST.q.trim().toLowerCase(),out=$('#res');if(!out)return;
@@ -47,7 +34,7 @@ doSearch=function(){
  out.innerHTML=`<p class="muted">${ST.yr}학년도 ${rows.length}건</p><div class="card">${rows.length?more(rows.map(g=>gi(g)),20):'일치하는 자료가 없습니다. 다른 학년도도 선택해 보세요.'}</div>`;
 };
 const originalWorkspaceSearch=vSearch;
-vSearch=function(){return originalWorkspaceSearch().replace('2025·2026학년도 기안','선택 학년도 기안').replace('찾은 낱말은 노랗게 표시돼요.','연결 근거와 검토 상태도 함께 확인할 수 있어요.');};
+vSearch=function(){return originalWorkspaceSearch().replace('2025·2026학년도 기안','선택 학년도 기안').replace('찾은 낱말은 노랗게 표시돼요.','제목을 누르면 문서 내용을 볼 수 있어요.');};
 const workspaceStyle=document.createElement('style');workspaceStyle.textContent=`
 .work-controls{position:sticky;top:0;z-index:5;background:var(--glass);backdrop-filter:blur(16px);border:1px solid #ddcbb7;border-radius:20px;padding:16px;margin-bottom:16px;box-shadow:0 5px 20px #6f431510;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px}
 .work-select label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}.work-select select{width:100%;padding:11px;border:1px solid #baa892;border-radius:10px;background:#fff;font:inherit;font-size:18px;color:var(--ink)}

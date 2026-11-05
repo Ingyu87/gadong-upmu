@@ -3,11 +3,12 @@ function guidanceHtml(t){
  const g=t.guidance;if(!g)return '';
  const compare=g.plan_comparison.filter(x=>x.matched_pdf_pages.length);
  const refs=compare.map(x=>`<li>${E(x.section)} · PDF ${x.matched_pdf_pages.join(', ')}페이지</li>`).join('');
- const forms=g.forms.map(f=>`<li style="margin-bottom:14px"><a href="${E(f.url)}" target="_blank" rel="noopener noreferrer">${E(f.title)} ↗</a>${f.content_note?`<div>${E(f.content_note)}</div>`:''}${f.review_status?`<div class="muted">${E(f.review_status)}${f.caution?' · '+E(f.caution):''}</div>`:''}</li>`).join('');
- return acc('업무 설명 · 진행 순서','',`<p>${E(g.description)}</p><ol>${g.steps.map(s=>`<li>${E(s)}</li>`).join('')}</ol>${g.note?`<p class="basis-note">${E(g.note)}</p>`:''}<p class="muted">업무분장과 아래 운영 자료를 대조하여 정리한 안내입니다.</p>`,true)
- +acc('참고 절 · 부장업무 자료','',g.manual_pages.length?`<p>${E(g.manual_source)} · ${g.manual_pages.join(', ')}쪽</p><p class="muted">학교 여건에 맞춰 활용하세요. 예산·시수·절차의 세부 기준은 해당 연도 사업 안내에서 확인하세요.</p>`:`<p>${E(g.manual_status)}</p>`,false)
- +acc('업무 서식 · 원본 열기',g.forms.length?String(g.forms.length):'',`${forms?`<ul>${forms}</ul><p class="muted">2026.11.5. 원본 본문·항목을 확인해 연결했습니다. 참고 양식의 예시값은 학교 여건에 맞춰 바꾸세요. 세부 절차는 올해 안내와 대조하세요.</p>`:'<p>현재 서식 목록에서 이 업무에 맞는 자료를 확인하지 못했습니다.</p>'}<a href="${E(g.forms_source)}" target="_blank" rel="noopener noreferrer">초등 업무 서식 전체 목록 ↗</a>`,false)
- +acc('교육계획서 판본 대조','',refs?`<p>2026 학교교육계획서(3.4)에서 기존 발췌 문장을 확인한 위치입니다. 아래 숫자는 PDF 페이지입니다.</p><ul>${refs}</ul>${compare.length<g.plan_comparison.length?'<p class="muted">일부 절은 기존에 표시된 출처를 함께 확인하세요.</p>':''}`:'<p>기존 운영 내용에 표시된 출처를 확인하세요. 3.4판에서 일치하는 발췌 문장은 아직 확인하지 못했습니다.</p>',false);
+ const formList=items=>`<ul class="form-links">${items.map(f=>`<li><a href="${E(f.url)}" target="_blank" rel="noopener noreferrer">${E(f.display_title||f.title)} <span>↗</span></a>${f.use_when||f.content_note?`<div class="form-use">${E(f.use_when||f.content_note)}</div>`:''}${f.usage_note?`<div class="form-warning">${E(f.usage_note)}</div>`:''}</li>`).join('')}</ul>`;
+ const forms=g.forms||[],references=g.reference_forms||[];
+ return acc('업무 설명 · 진행 순서','',`<p>${E(g.description)}</p><ol>${g.steps.map(s=>`<li>${E(s)}</li>`).join('')}</ol>${g.note?`<p class="basis-note">${E(g.note)}</p>`:''}`,true)
+ +(g.manual_pages.length?acc('부장업무 자료','',`<p>${E(g.manual_source)} · ${g.manual_pages.join(', ')}쪽</p>`,false):'')
+ +((forms.length||references.length)?acc('업무 서식 · 원본 열기','',`${forms.length?formList(forms):''}${references.length?`<details class="reference-forms"><summary>상황에 따라 참고할 자료 ${references.length}개 ▾</summary>${formList(references)}</details>`:''}<p class="form-use">학교명·일정·대상은 실제 운영에 맞춰 사용하세요.</p><a href="${E(g.forms_source)}" target="_blank" rel="noopener noreferrer">초등 업무 서식 전체 목록 ↗</a>`,false):'')
+ +(refs?acc('교육계획서 출처','',`<p>2026 학교교육계획서(3.4)</p><ul>${refs}</ul>`,false):'');
 }
 const previousPrimaryHtml=primaryHtml;
 primaryHtml=function(t){return guidanceHtml(t)+previousPrimaryHtml(t);};
