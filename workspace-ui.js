@@ -13,11 +13,8 @@ function workspaceControls(){return `<section class="work-controls" aria-label="
  </section>`;}
 // Month selection is shared by all screens, with no hidden horizontal strip.
 monthBar=()=>'';
-function workspaceStats(){
- const docs=DB.G.filter(g=>g.yr===ST.yr),events=T().flatMap(t=>evidenceEvents(t.name,ST.m,ST.yr));
- const planned=T().filter(t=>primarySchedule(t,ST.m,ST.yr).length||(RL().WP||[]).some(w=>w.y===ST.yr&&w.m===ST.m&&w.task===t.name));
- return `<div class="work-stats"><span><b>${T().length}</b> 담당 업무</span><span><b>${planned.length}</b> 이달 계획 있는 업무</span><span><b>${events.length}</b> 본문에서 확인한 일정</span><span><b>${docs.length}</b> 선택 학년도 연결 문서</span></div>`;
-}
+function workspaceStats(){return '';}
+
 vHome=function(){ST.view='work';ST.tab='cal';return vWork();};
 vWork=function(){
  const body=ST.tab==='cal'?vCal():ST.tab==='task'?vTask():ST.tab==='todo'?vTodo():vSearch();
