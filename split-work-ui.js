@@ -30,6 +30,48 @@ function captureSrc(yr,no){
  if(mapped)return mapped;
  return (yr==2025||yr==='2025')?`img/y25_${no}.webp`:`img/${no}.webp`;
 }
+function hasCapture(g){return !!(workCatalog?.captures&&workCatalog.captures[evidenceKey(g.yr,g.no)]);}
+function foldQ(s){return String(s||'').toLowerCase().replace(/\s+/g,'');}
+function publicDocsForRole(key,r){
+ const out=[],seen=new Set();
+ for(const t of r.TASKS||[]){
+  for(const k of t.document_keys||[]){
+   if(PRIVATE_DOC_KEYS.has(k)||seen.has(k))continue;
+   const [yr,no]=k.split(':');
+   const g=findPublicDoc(yr,no);
+   if(!g||g.priv)continue;
+   seen.add(k);
+   out.push({yr:g.yr,no:String(g.no),title:g.title||'',task:t.name});
+  }
+ }
+ return out;
+}
+function monthlyEventsForRole(key){
+ const cat=workCatalog?.roles?.[key];
+ if(!cat)return [];
+ const byId=Object.fromEntries((cat.tasks||[]).map(t=>[t.id,t.name]));
+ return (cat.schedule||[]).map(e=>({title:e.title||'',date:e.date||'',task:byId[e.task_id]||'',kind:e.kind}));
+}
+function homeSearchHits(key,r,q){
+ const nq=foldQ(q);
+ if(!nq)return {ok:true,hits:[]};
+ const hits=[];
+ const add=(type,text,extra)=>{
+  const blob=foldQ(`${text} ${extra||''}`);
+  if(blob.includes(nq))hits.push({type,text,extra:extra||''});
+ };
+ add('담당',r.label);
+ add('부서',r.dept);
+ if(key==='g07')add('담당','학성위');
+ for(const t of r.TASKS||[])add('세부 업무',t.name);
+ for(const e of monthlyEventsForRole(key))add('월별 일정',e.title,e.task);
+ for(const d of publicDocsForRole(key,r))add('공개 문서',`${d.no} · ${d.title}`,d.task);
+ const rank={ '공개 문서':0,'월별 일정':1,'세부 업무':2,'담당':3,'부서':4 };
+ hits.sort((a,b)=>(rank[a.type]??9)-(rank[b.type]??9));
+ const seen=new Set(),uniq=[];
+ for(const h of hits){const k=h.type+'|'+h.text;if(seen.has(k))continue;seen.add(k);uniq.push(h);}
+ return {ok:uniq.length>0,hits:uniq};
+}
 function evidenceChip(e){
  if(e.kind!=='document')return ` · ${E(e.source||'월중계획')}`;
  if(!findPublicDoc(e.source_year,e.source_no))return ` · <span class="chip gray evidence-withheld">근거 비공개</span>`;
@@ -55,21 +97,41 @@ workspaceTabs.splice(0,workspaceTabs.length,['task','업무 안내'],['cal','월
 vTask=function(){
  const t=basisTask(ST.task)||T()[0];ST.task=t.name;
  const docs=splitDocs(t).filter(g=>g.yr===ST.yr);
- const forms=t.forms||[];
+ const forms=(t.forms||[]).map(f=>({title:f.title,use:f.use}));
  const withCapture=g=>!!(workCatalog.captures&&workCatalog.captures[`${g.yr}:${g.no}`]);
  const example=docs.find(g=>/계획|결과|선정|평가|안내/.test(g.title)&&!g.priv&&!g.nb&&!g.pend&&withCapture(g))||docs.find(g=>!g.priv&&!g.nb&&!g.pend&&withCapture(g))||docs.find(g=>/계획|결과|선정|평가|안내/.test(g.title)&&!g.priv&&!g.nb&&!g.pend);
  const related=docs.length?acc(`${ST.yr}학년도 에듀파인 기안문`,'',more(docs.map(g=>gi(g)),10),true):'';
  const basis=`<p>${E(t.basis.assignment||'2026.9.1. 업무분장표')} · ${E(t.basis.page)}쪽</p>${basisList(t.desc)}${(t.basis.sections||[]).map(s=>`<details class="basis-section"><summary>${E(s.title)}</summary>${basisList(s.way||[])}</details>`).join('')}${t.manual_pages?.length?`<p>부장업무함께해요 · ${t.manual_pages.join(', ')}쪽</p>`:''}`;
- return `<section class="card task-intro"><span class="task-dept">${E(RL().dept)}</span><h1>${E(RL().label)}</h1><nav class="work-category-picker" aria-label="세부 업무 선택">${T().map(x=>`<button data-split-work="${E(x.name)}" aria-pressed="${x.name===t.name}">${E(x.name)}</button>`).join('')}</nav><h2>${E(t.name)}</h2><p class="first-action"><b>먼저 할 일</b>${E(t.steps[0])}</p></section><section class="card task-action-layout"><div><h2>진행 순서</h2><ol class="action-steps">${t.steps.map((s,i)=>`<li><span>${i+1}</span><p>${E(s)}</p></li>`).join('')}</ol></div><aside class="writing-docs"><h2>작성할 문서</h2>${t.documents.map(d=>`<p>${E(d)}</p>`).join('')}${example?`<h3>에듀파인 기안문</h3>${gi(example)}`:''}${forms.length?`<h3>작성 서식</h3><p class="form-notice">서식 원본은 내부 검토 후 공개합니다.</p>${forms.map(f=>`<span class="form-withheld">${E(f.title)}</span><p class="form-use">${E(f.use)}</p>`).join('')}`:''}</aside></section><div class="acs">${related}${acc('업무분장·교육계획 근거','',basis,false)}</div>`;
+ return `<section class="card task-intro"><span class="task-dept">${E(RL().dept)}</span><h1>${E(RL().label)}</h1><nav class="work-category-picker" aria-label="세부 업무 선택">${T().map(x=>`<button data-split-work="${E(x.name)}" aria-pressed="${x.name===t.name}">${E(x.name)}</button>`).join('')}</nav><h2>${E(t.name)}</h2><p class="first-action"><b>먼저 할 일</b>${E(t.steps[0])}</p></section><section class="card task-action-layout"><div><h2>진행 순서</h2><ol class="action-steps">${t.steps.map((s,i)=>`<li><span>${i+1}</span><p>${E(s)}</p></li>`).join('')}</ol></div><aside class="writing-docs"><h2>작성할 문서</h2>${t.documents.map(d=>`<p>${E(d)}</p>`).join('')}${example?`<h3>에듀파인 기안문</h3>${gi(example)}`:''}${forms.length?`<h3>작성 서식</h3><p class="form-notice">서식 파일은 내부 검토 중이라 이 화면에서 열 수 없습니다. 링크가 없습니다.</p>${forms.map(f=>`<span class="form-withheld" aria-disabled="true">${E(f.title)}<small class="form-unavailable">파일 없음 · 다운로드 불가</small></span><p class="form-use">${E(f.use||'')}</p>`).join('')}`:''}</aside></section><div class="acs">${related}${acc('업무분장·교육계획 근거','',basis,false)}</div>`;
 };
 workSide=function(){const t=basisTask(ST.task)||T()[0];return `<aside class="work-side"><a class="school-brand" href="#" onclick="event.preventDefault();go('home')"><span class="brand-mark">가동</span><span>서울가동초등학교<small>업무 길잡이</small></span></a><div class="side-select"><span>${E(RL().dept)}</span><h2>${E(RL().label)}</h2><button class="assignment-back" onclick="go('home')">← 업무분장표로</button></div><nav class="side-views" aria-label="업무 화면">${workspaceTabs.map(([id,label],i)=>`<button class="${ST.tab===id?'selected':''}" aria-current="${ST.tab===id?'page':'false'}" onclick="ST.tab='${id}';ST.calFolded=false;render()"><span class="side-icon">${['▤','▦','⌕'][i]}</span>${E(label)}</button>`).join('')}</nav><h2 class="side-caption">같은 담당의 업무</h2><nav class="side-tasks" aria-label="업무 선택">${T().map(x=>`<button class="${ST.task===x.name?'selected':''}" data-split-work="${E(x.name)}">${E(x.name)}<span>›</span></button>`).join('')}</nav></aside>`;};
 let assignmentQuery='';
 assignmentDept='전체';
-function splitHomeRows(){const groups={};for(const [key,r] of Object.entries(DB.R)){if(!assignmentQuery&&assignmentDept!=='전체'&&assignmentDept!==r.dept)continue;const searchable=`${r.label} ${r.dept} ${r.TASKS.map(t=>t.name).join(' ')} ${key==='g07'?'학성위':''}`;if(assignmentQuery&&!searchable.includes(assignmentQuery))continue;(groups[r.dept]??=[]).push([key,r]);}return Object.entries(groups).map(([dept,items])=>`<section class="assignment-card"><h2>${E(dept)}</h2><div class="assignment-role-list">${items.map(([key,r])=>`<button class="assignment-role" data-assignment-role="${E(key)}"><strong>${E(r.label)}</strong></button>`).join('')}</div></section>`).join('');}
+function splitHomeRows(){
+ const groups={};
+ for(const [key,r] of Object.entries(DB.R)){
+  if(!assignmentQuery&&assignmentDept!=='전체'&&assignmentDept!==r.dept)continue;
+  const found=homeSearchHits(key,r,assignmentQuery);
+  if(assignmentQuery&&!found.ok)continue;
+  (groups[r.dept]??=[]).push([key,r,found.hits]);
+ }
+ if(!Object.keys(groups).length){
+  const q=assignmentQuery?`‘${E(assignmentQuery)}’에 맞는 담당이 없습니다. `:'표시할 담당이 없습니다. ';
+  return `<p class="assignment-empty" role="status">${q}부서명, 세부 업무, 월별 일정, 공개 문서 번호·제목으로 다시 찾아 보세요.</p>`;
+ }
+ const hitHtml=hits=>{
+  if(!assignmentQuery||!hits.length)return '';
+  const primary=hits.filter(h=>h.type!=='부서');
+  const show=(primary.length?primary:hits).slice(0,3);
+  const more=hits.length>show.length?`<li class="hit-more">외 ${hits.length-show.length}건</li>`:'';
+  return `<ul class="search-hits">${show.map(h=>`<li><span class="hit-type">${E(h.type)}</span>${E(h.text)}${h.extra&&h.type!=='세부 업무'?` · ${E(h.extra)}`:''}</li>`).join('')}${more}</ul>`;
+ };
+ return Object.entries(groups).map(([dept,items])=>`<section class="assignment-card"><h2>${E(dept)}</h2><div class="assignment-role-list">${items.map(([key,r,hits])=>`<div class="assignment-role-wrap"><button class="assignment-role" data-assignment-role="${E(key)}"><strong>${E(r.label)}</strong></button>${hitHtml(hits)}</div>`).join('')}</div></section>`).join('');
+}
 enterAssignment=function(id){useRole(id);ST.task=T()[0].name;ST.view='work';ST.tab='task';render();scrollTo(0,0);};
 
-vHome=function(){const depts=[...new Set(Object.values(DB.R).map(r=>r.dept))];return `<header class="workspace-top"><b>가동초 업무 길잡이</b><span>2026.9.1. 업무분장</span></header><main class="assignment-home"><header class="assignment-heading"><h1>업무분장표</h1><p>담당 업무를 선택하세요.</p><input id="assignment-search" class="q" value="${E(assignmentQuery)}" placeholder="담당 업무 찾기 · 예: 학성위, 교과서, 체육" aria-label="업무 찾기"><button class="fold-all" data-fold-all onclick="collapseAll()">모두 접기</button></header><nav class="assignment-depts" aria-label="부서 선택">${['전체',...depts].map(d=>`<button aria-pressed="${assignmentDept===d}" data-assignment-dept="${E(d)}">${E(d)}</button>`).join('')}</nav><div class="assignment-grid ${assignmentDept!=='전체'?'single-dept':''}">${splitHomeRows()}</div></main><div id="companion-slot" class="assignment-companion"></div>`;};
-document.addEventListener('input',e=>{if(e.target.id==='assignment-search'){assignmentQuery=e.target.value.trim();document.querySelector('.assignment-grid').innerHTML=splitHomeRows();}});
+vHome=function(){const depts=[...new Set(Object.values(DB.R).map(r=>r.dept))];return `<header class="workspace-top"><b>가동초 업무 길잡이</b><span>2026.9.1. 업무분장</span></header><main class="assignment-home"><header class="assignment-heading"><h1>업무분장표</h1><p>담당 업무를 선택하세요.</p><input id="assignment-search" class="q" value="${E(assignmentQuery)}" placeholder="담당·일정·공개 문서 찾기 · 예: 학성위, 일람표, 9642" aria-label="업무 찾기"><button class="fold-all" data-fold-all onclick="collapseAll()">모두 접기</button></header><nav class="assignment-depts" aria-label="부서 선택">${['전체',...depts].map(d=>`<button aria-pressed="${assignmentDept===d}" data-assignment-dept="${E(d)}">${E(d)}</button>`).join('')}</nav><div class="assignment-grid ${assignmentDept!=='전체'?'single-dept':''}${assignmentQuery?' is-searching':''}">${splitHomeRows()}</div></main><div id="companion-slot" class="assignment-companion"></div>`;};
+document.addEventListener('input',e=>{if(e.target.id==='assignment-search'){assignmentQuery=e.target.value.trim();const grid=document.querySelector('.assignment-grid');if(!grid)return;grid.classList.toggle('is-searching',!!assignmentQuery);grid.innerHTML=splitHomeRows();}});
 document.addEventListener('click',e=>{const home=e.target.closest('[data-split-role]');if(home){useRole(home.dataset.splitRole);ST.task=home.dataset.splitName;ST.tab='task';ST.view='work';render();scrollTo(0,0);return;}const side=e.target.closest('[data-split-work]');if(side){ST.task=side.dataset.splitWork;ST.tab='task';render();scrollTo(0,0);}});
 const beforeSplitCompanion=refreshCompanion;
 refreshCompanion=function(){beforeSplitCompanion();if(ST.view!=='work')return;const t=basisTask(ST.task)||T()[0];const title=document.getElementById('guide-title'),copy=document.getElementById('guide-copy'),action=document.getElementById('guide-action');if(ST.tab==='cal'||ST.tab==='todo'){const rows=roleMonthEvidence().flatMap(g=>g.events);title.textContent=`${ST.m}월 · ${RL().label}`;copy.textContent=rows.length?rows[0].title:'';action.hidden=!rows.length;action.onclick=()=>basisOpen(roleMonthEvidence().find(g=>g.task)?.task.name||t.name);}else if(ST.tab==='task'){action.hidden=false;title.textContent=t.name;copy.textContent=t.steps[0];action.innerHTML='작성할 문서 보기 <span>↗</span>';action.onclick=()=>document.querySelector('.writing-docs')?.scrollIntoView({block:'center',behavior:guideMotionOff()?'instant':'smooth'});}else{action.hidden=false;}};
@@ -85,14 +147,32 @@ splitStyle.textContent+=`.assignment-grid,.assignment-grid.single-dept{display:g
 
 splitStyle.textContent+=`.work-entry-tabs{display:flex;gap:10px}.work-entry-tabs button{font-size:20px;font-weight:800;padding:10px 18px;border:1px solid #aabfac;border-radius:8px;background:white;color:#294e3a}.work-entry-tabs button[aria-pressed=true]{background:#3d6b52;color:white}.companion .weather-label{display:none!important}`;
 
-// Existing publication images retain their original masking. Private/excluded IDs never open.
+gi=function(g,short){
+ if(g.pend||g.nb)return `<div class="gi" style="cursor:default"><div class="t">${RC(g)}${E(short?g.title.slice(0,60):g.title)}</div><div class="muted">${g.date} · No.${g.no}${g.sched?' · <span class="chip s2">예정</span>':''}</div></div>`;
+ if(g.priv)return `<div class="gi" style="cursor:default"><div class="t">${E(g.title)}</div><div class="muted">${g.date} · No.${g.no}</div><div class="lock">🔒 비공개 – 담당자에게 직접 문의</div></div>`;
+ const cap=hasCapture(g);
+ const cta=cap?'캡처 보기 ›':'제목·번호 보기';
+ const miss=cap?'':'<span class="chip gray capture-missing">캡처 없음</span> ';
+ return `<div class="gi" onclick="openG('${g.yr}','${g.no}')"><div class="t">${E(short?g.title.slice(0,60):g.title)}</div><div class="muted">${miss}${g.date} · No.${g.no} · ${cta}</div></div>`;
+};
 openG=function(yr,no){
  const g=findPublicDoc(yr,no);
  if(!g)return;
- const src=captureSrc(g.yr,g.no);
- $('#mdh').innerHTML=`<span class="chip">${g.yr}학년도 에듀파인 기안문</span><h3>${E(g.title)}</h3><p class="muted">문서번호 ${E(g.no)} · ${E(g.date)}</p>`;
- $('#mdb').innerHTML=`<img class="edufine-capture" src="${E(src)}" alt="${E(g.title)} 에듀파인 기안문" onerror="this.outerHTML='<p class=\\'muted\\'>이 문서의 캡처 이미지가 없습니다.</p>'">`;
+ $('#mdh').innerHTML=`<span class="chip">${g.yr}학년도 에듀파인 기안문</span>${hasCapture(g)?'':'<span class="chip gray capture-missing">캡처 없음</span>'}<h3>${E(g.title)}</h3><p class="muted">문서번호 ${E(g.no)} · ${E(g.date)}</p>`;
+ if(hasCapture(g)){
+  const src=workCatalog.captures[evidenceKey(g.yr,g.no)];
+  $('#mdb').innerHTML=`<img class="edufine-capture" src="${E(src)}" alt="${E(g.title)} 에듀파인 기안문">`;
+ }else{
+  $('#mdb').innerHTML=`<p class="muted capture-missing-note">캡처 이미지가 없습니다. 공개된 제목과 문서번호만 표시합니다.</p><p>문서번호 ${E(g.no)} · ${E(g.date)}</p>`;
+ }
  $('#md').style.display='flex';document.body.style.overflow='hidden';
+};
+doSearch=function(){
+ const q=ST.q.trim(),out=$('#res');if(!out)return;
+ if(!q){out.innerHTML='<div class="card search-results"><p class="search-count">제목·문서번호로 찾아 보세요. 선택한 담당과 학년도의 공개 자료만 나옵니다.</p></div>';return;}
+ const nq=foldQ(q),sf=ST.sf||'prod';
+ const rows=(DB.G||[]).filter(g=>g.yr===ST.yr&&!g.priv&&!PRIVATE_DOC_KEYS.has(evidenceKey(g.yr,g.no))&&(sf==='all'||(sf==='rcv')===!!g.rc)&&[g.title,String(g.no)].some(s=>foldQ(s).includes(nq)));
+ out.innerHTML=`<div class="card search-results"><p class="search-count">${ST.yr}학년도 ${rows.length}건</p>${rows.length?more(rows.map(g=>gi(g)),20):'<p class="search-empty">일치하는 공개 자료가 없습니다. 다른 학년도나 담당을 선택해 보세요.</p>'}</div>`;
 };
 ST.calFolded=false;
 const beforeMonthlyCollapse=collapseAll;
@@ -104,3 +184,4 @@ document.addEventListener('toggle',e=>{const d=e.target;if(d.matches?.('.month-t
 splitStyle.textContent+=`.edufine-capture{display:block;width:100%;height:auto;margin:12px 0;border:1px solid #d6ddd4}.edufine-text{white-space:pre-wrap;font-size:18px;line-height:1.8}`;
 splitStyle.textContent+=`.form-withheld{display:block;padding:10px;background:#f5f5f5;border:1px solid #ccc;border-radius:7px;margin:8px 0;color:#666;font-weight:700}.form-notice{font-size:14px;color:#666;margin:4px 0 8px;font-style:italic}`;
 splitStyle.textContent+=`.month-board{display:grid;gap:10px}.month-board-title{font-size:26px;margin:4px 0 8px;letter-spacing:-.8px}.month-task-card{padding:12px 18px}.month-task-card>summary{cursor:pointer;list-style:none;font-size:20px}.month-task-card>summary::-webkit-details-marker{display:none}.month-task-card:not([open]){padding:10px 18px}.month-empty{padding:8px 4px}.evidence-withheld{cursor:default;pointer-events:none}.chip.gray.evidence-withheld{background:#ececec;color:#666}`;
+splitStyle.textContent+=`:root{--footer-safe:76px}html,body{overflow-x:hidden}#app{position:relative;z-index:12}.campus-footer{z-index:6!important}.work-side,.work-main,.assignment-home,.assignment-grid,.work-page,.work-controls{position:relative;z-index:12}.work-side{max-height:calc(100dvh - 96px - var(--footer-safe));overflow-x:hidden;min-width:0}.side-tasks{max-height:calc(100dvh - 300px - var(--footer-safe))!important;overflow-x:hidden!important;overflow-y:auto;min-width:0}.side-tasks button{min-width:0;max-width:100%;overflow:hidden;word-break:break-word;overflow-wrap:anywhere}.assignment-home{padding-bottom:calc(var(--footer-safe) + 28px)!important}.work-shell{padding-bottom:calc(var(--footer-safe) + 40px)!important}#companion-slot{z-index:8}#companion-slot.assignment-companion{bottom:var(--footer-safe)!important;z-index:8}.month-board-title,.month-empty{background:#fffefaf5;border:1px solid #ffffffd0;border-radius:14px;padding:10px 16px;color:#1d3528;box-shadow:0 4px 14px #233d2312}.search-results .search-count{margin:0 0 10px;padding:8px 12px;background:#eef4ea;border-radius:10px;color:#1d3528;font-weight:750}.search-empty,.assignment-empty{background:#fffefaf5;border:1px solid #d7e0d2;border-radius:14px;padding:18px 20px;color:#243c35;font-size:18px;line-height:1.6}.assignment-empty{margin:8px 4px 12px}.assignment-card{background:#fffefa!important}.assignment-role-list .assignment-role{background:#fff!important}.search-hits{list-style:none;margin:6px 0 0;padding:0 4px 6px;font-size:14px;line-height:1.45;color:#2f4638;text-align:left}.search-hits li{margin-top:4px}.hit-type{display:inline-block;font-weight:800;color:#2c5a3e;margin-right:6px}.assignment-grid.is-searching .assignment-role-list{grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:start}.assignment-role-wrap{min-width:0}.capture-missing{cursor:default}.form-unavailable{display:block;margin-top:4px;font-size:13px;font-weight:700;color:#7a4e16}.form-withheld{cursor:default;pointer-events:none}@media(max-width:1024px){:root{--footer-safe:80px}.work-shell{padding-bottom:calc(var(--footer-safe) + 48px)!important}}@media(max-width:720px){:root{--footer-safe:92px}.assignment-home{padding-bottom:calc(var(--footer-safe) + 36px)!important}.work-shell{padding-bottom:calc(var(--footer-safe) + 56px)!important}#companion-slot.assignment-companion{position:relative!important;right:auto!important;bottom:auto!important;width:min(220px,70vw);margin:8px auto 0;z-index:8}.assignment-grid.is-searching .assignment-role-list{grid-template-columns:1fr!important}}`;
