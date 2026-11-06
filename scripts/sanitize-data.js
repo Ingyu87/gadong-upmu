@@ -16,12 +16,31 @@
 const fs = require('fs');
 const path = require('path');
 
-const PERSONAL_NAME_PATTERN = /[가-힣]{2,4}(?=\)|강사|선생|교사|교감|교장|부장)/g;
 const ATT_PERSONAL_PATTERN = /\([^)]*[가-힣]{2,4}\)[^/]*(강사카드|개인정보|동의서)/gi;
+
+const KNOWN_NAMES = [
+  '최문위', '방은희', '이지예', '송지선', '김은진', '이주영',
+  '송연수', '백인규', '박경아', '정홍주', '강미령', '배현미',
+  '권보영', '허윤호', '오준수', '정대준', '정서연', '마렬미'
+];
+
+function containsPersonName(str) {
+  if (!str || typeof str !== 'string') return false;
+  return KNOWN_NAMES.some(name => str.includes(name));
+}
+
+function sanitizeString(str) {
+  if (!str || typeof str !== 'string') return str;
+  let result = str;
+  for (const name of KNOWN_NAMES) {
+    result = result.replace(new RegExp(name, 'g'), '[이름 가림]');
+  }
+  return result;
+}
 
 function sanitizeAttachment(att) {
   if (!att) return att;
-  if (ATT_PERSONAL_PATTERN.test(att)) {
+  if (ATT_PERSONAL_PATTERN.test(att) || containsPersonName(att)) {
     return '(첨부파일 있음 - 개인정보 포함으로 파일명 가림)';
   }
   return att;
@@ -33,6 +52,8 @@ function sanitizeEntry(entry) {
   delete sanitized.who;
   delete sanitized.body;
   delete sanitized.body_note;
+  delete sanitized.previous_body;
+  delete sanitized.owners;
   
   if (sanitized.att) {
     sanitized.att = sanitizeAttachment(sanitized.att);
@@ -41,9 +62,33 @@ function sanitizeEntry(entry) {
   if (sanitized.matching_evidence) {
     const ev = { ...sanitized.matching_evidence };
     delete ev.reason;
+    delete ev.previous_body;
+    if (ev.plan_section_titles) {
+      ev.plan_section_titles = ev.plan_section_titles.map(t => sanitizeString(t));
+    }
     sanitized.matching_evidence = ev;
   }
   
+  if (sanitized.document_review_notes) {
+    sanitized.document_review_notes = sanitized.document_review_notes.map(note => {
+      const n = { ...note };
+      delete n.previous_body;
+      if (n.note && containsPersonName(n.note)) {
+        n.note = sanitizeString(n.note);
+      }
+      return n;
+    });
+  }
+  
+  return sanitized;
+}
+
+function sanitizeDriveFile(file) {
+  const sanitized = { ...file };
+  delete sanitized.owners;
+  if (sanitized.n && containsPersonName(sanitized.n)) {
+    sanitized.n = sanitizeString(sanitized.n);
+  }
   return sanitized;
 }
 
@@ -56,6 +101,45 @@ function sanitizeRole(role) {
       .map(sanitizeEntry);
   }
   
+  if (sanitized.D) {
+    sanitized.D = sanitized.D.map(sanitizeDriveFile);
+  }
+  
+  return sanitized;
+}
+
+function sanitizeTask(task) {
+  const sanitized = { ...task };
+  delete sanitized.owners;
+  delete sanitized.previous_body;
+  
+  if (sanitized.basis && sanitized.basis.sections) {
+    sanitized.basis.sections = sanitized.basis.sections.map(section => {
+      const s = { ...section };
+      if (s.goal) s.goal = s.goal.map(g => sanitizeString(g));
+      if (s.way) s.way = s.way.map(w => sanitizeString(w));
+      return s;
+    });
+  }
+  
+  return sanitized;
+}
+
+function sanitizeGenEntry(entry) {
+  const sanitized = { ...entry };
+  delete sanitized.owner;
+  if (sanitized.note) {
+    sanitized.note = sanitizeString(sanitized.note);
+  }
+  if (sanitized.desc) {
+    sanitized.desc = sanitizeString(sanitized.desc);
+  }
+  return sanitized;
+}
+
+function sanitizeHeadEntry(entry) {
+  const sanitized = { ...entry };
+  delete sanitized.owner;
   return sanitized;
 }
 
@@ -65,15 +149,36 @@ function sanitizeData(data) {
   if (sanitized.R) {
     const newR = {};
     for (const [key, role] of Object.entries(sanitized.R)) {
-      newR[key] = sanitizeRole(role);
+      const sanitizedRole = sanitizeRole(role);
+      if (sanitizedRole.TASKS) {
+        sanitizedRole.TASKS = sanitizedRole.TASKS.map(sanitizeTask);
+      }
+      newR[key] = sanitizedRole;
     }
     sanitized.R = newR;
   }
   
+  if (sanitized.GEN) {
+    sanitized.GEN = sanitized.GEN.map(sanitizeGenEntry);
+  }
+  
+  if (sanitized.HEADS) {
+    sanitized.HEADS = sanitized.HEADS.map(sanitizeHeadEntry);
+  }
+  
+  if (sanitized.matching_review) {
+    delete sanitized.matching_review;
+  }
+  
+  if (sanitized.review_summary) {
+    sanitized.review_summary = sanitizeString(JSON.stringify(sanitized.review_summary));
+    try { sanitized.review_summary = JSON.parse(sanitized.review_summary); } catch(e) {}
+  }
+  
   sanitized._privacy_sanitized = {
     timestamp: new Date().toISOString(),
-    version: '1.0.0',
-    removed: ['who', 'body', 'body_note', 'priv=true entries'],
+    version: '2.0.0',
+    removed: ['who', 'body', 'body_note', 'previous_body', 'owners', 'owner', 'priv=true entries', 'matching_review'],
     note: 'Personal information removed for public deployment'
   };
   
