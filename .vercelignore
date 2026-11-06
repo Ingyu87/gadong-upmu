@@ -1,0 +1,46 @@
+# Vercel Deployment Exclusions - Fail-Closed Privacy Boundary
+# This file explicitly excludes sensitive directories from ALL Vercel deployments
+# regardless of .gitignore or Git state. This is critical for privacy containment.
+
+# Quarantined sensitive content - NEVER deploy
+.quarantine/
+quarantine/
+
+# Original/backup data files - contain personal information
+data-original*.json
+data-backup*.json
+data-sanitized.json
+sanitization-stats.json
+
+# Audit and privacy review files
+privacy-audit*.log
+audit-*.json
+**/privacy_audit/
+uploads/
+
+# Test files - not needed in production (served from dist/ only)
+tests/
+*.test.js
+*.spec.js
+
+# NOTE: scripts/ is NOT excluded - required for buildCommand
+# Build output (dist/) is the only publicly served directory
+# scripts/ is uploaded for build but not served (outputDirectory=dist)
+
+# Local development
+.env
+.env.*
+node_modules/
+
+# Git internals
+.git/
+.gitignore
+
+# Cursor/IDE files
+.cursor/
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+/tmp/

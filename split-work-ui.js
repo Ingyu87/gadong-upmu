@@ -1,0 +1,106 @@
+/* Independent work entries. Dates come solely from source-backed schedule records. */
+let workCatalog=null;
+function installWorkCatalog(catalog){
+ workCatalog=catalog;
+ DB.R.g01.label='나이스(NEIS)';
+ for(const [key,entry] of Object.entries(catalog.roles)){
+  let role=DB.R[key];
+  if(!role)role=DB.R[key]={label:entry.label,dept:entry.dept,short:entry.label,G:[],D:[],WP:[],TASKS:[]};
+  role.sourceTasks=role.TASKS;
+  role.TASKS=entry.tasks;
+  role.task0=entry.tasks[0].name;
+ }
+}
+function currentCatalog(){return workCatalog.roles[ST.role];}
+function splitDocs(t){const keys=new Set(t.document_keys);return DB.G.filter(g=>keys.has(`${g.yr}:${g.no}`));}
+function monthEvidence(t,month=ST.m,year=ST.yr){
+ const cy=year+(month<=2?1:0),start=`${cy}-${String(month).padStart(2,'0')}-01`,end=new Date(Date.UTC(cy,month,1)).toISOString().slice(0,10);
+ const found=currentCatalog().schedule.filter(e=>e.task_id===t.id&&(e.kind==='plan'?e.school_year===year&&e.month===month:e.date<end&&(e.end_date||e.date)>=start));
+ const seen=new Set();return found.filter(e=>{const k=[e.kind,e.date,e.end_date,e.title,e.source_no].join('|');if(seen.has(k))return false;seen.add(k);return true;});
+}
+const PRIVATE_DOC_KEYS=new Set(['2025:4632','2025:6781','2025:16532','2025:3281','2026:4801','2026:3254','2026:6254']);
+function evidenceKey(yr,no){return `${yr}:${no}`;}
+function findPublicDoc(yr,no){
+ if(PRIVATE_DOC_KEYS.has(evidenceKey(yr,no)))return null;
+ const match=g=>g.yr==yr&&String(g.no)===String(no)&&!g.priv;
+ return (DB.G||[]).find(match)||Object.values(DB.R).flatMap(r=>r.G||[]).find(match)||null;
+}
+function captureSrc(yr,no){
+ const mapped=workCatalog?.captures?.[evidenceKey(yr,no)];
+ if(mapped)return mapped;
+ return (yr==2025||yr==='2025')?`img/y25_${no}.webp`:`img/${no}.webp`;
+}
+function evidenceChip(e){
+ if(e.kind!=='document')return ` · ${E(e.source||'월중계획')}`;
+ if(!findPublicDoc(e.source_year,e.source_no))return ` · <span class="chip gray evidence-withheld">근거 비공개</span>`;
+ return ` · <button type="button" class="chip" onclick="openG(${e.source_year},'${E(e.source_no)}')">근거 문서 ${E(e.source_no)}호</button>`;
+}
+function eventList(items){return `<ul class="confirmed-events">${items.map(e=>`<li><span class="event-date">${E(e.date||`${e.month}월`)}${e.end_date&&e.end_date!==e.date?' ~ '+E(e.end_date):''}</span><strong>${E(e.title)}</strong><div class="event-source">${E(e.status)}${evidenceChip(e)}</div></li>`).join('')}</ul>`;}
+function roleMonthEvidence(){
+ const groups=T().map(t=>({task:t,events:monthEvidence(t)})).filter(g=>g.events.length);
+ const cy=ST.yr+(ST.m<=2?1:0),known=new Set(groups.flatMap(g=>g.events.filter(e=>e.kind==='monthly').map(e=>e.title)));
+ const remaining=(RL().WP||[]).filter(e=>!e.rec&&e.y===cy&&e.m===ST.m&&e.d>0&&!known.has(e.t));
+ if(remaining.length)groups.push({task:null,events:remaining.map(e=>({date:`${e.y}-${String(e.m).padStart(2,'0')}-${String(e.d).padStart(2,'0')}`,title:e.t,status:'월중계획에 기재된 예정',source:`월중계획 · ${e.task}`,kind:'monthly'}))});
+ return groups;
+}
+vCal=function(){
+ if(ST.calFolded)return '';
+ const groups=roleMonthEvidence();
+ if(!groups.length)return `<p class="muted month-empty">${ST.yr}학년도 ${ST.m}월에 확인된 일정이 없습니다.</p>`;
+ return `<section class="month-board" aria-label="${ST.yr}학년도 ${ST.m}월 일정"><h1 class="month-board-title">${ST.yr}학년도 ${ST.m}월 · ${E(RL().label)}</h1>${groups.map(g=>`<details class="card cc month-task-card"><summary aria-expanded="false"><b>${E(g.task?.name||'월중계획')}</b></summary>${eventList(g.events)}${g.task?`<button class="mb" data-basis-task="${E(g.task.name)}">${E(g.task.name)} 업무 흐름 →</button>`:''}</details>`).join('')}</section>`;
+};
+
+vTodo=function(){return vCal();};
+workspaceTabs.splice(0,workspaceTabs.length,['task','업무 안내'],['cal','월별 업무'],['search','자료 검색']);
+vTask=function(){
+ const t=basisTask(ST.task)||T()[0];ST.task=t.name;
+ const docs=splitDocs(t).filter(g=>g.yr===ST.yr);
+ const forms=t.forms||[];
+ const withCapture=g=>!!(workCatalog.captures&&workCatalog.captures[`${g.yr}:${g.no}`]);
+ const example=docs.find(g=>/계획|결과|선정|평가|안내/.test(g.title)&&!g.priv&&!g.nb&&!g.pend&&withCapture(g))||docs.find(g=>!g.priv&&!g.nb&&!g.pend&&withCapture(g))||docs.find(g=>/계획|결과|선정|평가|안내/.test(g.title)&&!g.priv&&!g.nb&&!g.pend);
+ const related=docs.length?acc(`${ST.yr}학년도 에듀파인 기안문`,'',more(docs.map(g=>gi(g)),10),true):'';
+ const basis=`<p>${E(t.basis.assignment||'2026.9.1. 업무분장표')} · ${E(t.basis.page)}쪽</p>${basisList(t.desc)}${(t.basis.sections||[]).map(s=>`<details class="basis-section"><summary>${E(s.title)}</summary>${basisList(s.way||[])}</details>`).join('')}${t.manual_pages?.length?`<p>부장업무함께해요 · ${t.manual_pages.join(', ')}쪽</p>`:''}`;
+ return `<section class="card task-intro"><span class="task-dept">${E(RL().dept)}</span><h1>${E(RL().label)}</h1><nav class="work-category-picker" aria-label="세부 업무 선택">${T().map(x=>`<button data-split-work="${E(x.name)}" aria-pressed="${x.name===t.name}">${E(x.name)}</button>`).join('')}</nav><h2>${E(t.name)}</h2><p class="first-action"><b>먼저 할 일</b>${E(t.steps[0])}</p></section><section class="card task-action-layout"><div><h2>진행 순서</h2><ol class="action-steps">${t.steps.map((s,i)=>`<li><span>${i+1}</span><p>${E(s)}</p></li>`).join('')}</ol></div><aside class="writing-docs"><h2>작성할 문서</h2>${t.documents.map(d=>`<p>${E(d)}</p>`).join('')}${example?`<h3>에듀파인 기안문</h3>${gi(example)}`:''}${forms.length?`<h3>작성 서식</h3><p class="form-notice">서식 원본은 내부 검토 후 공개합니다.</p>${forms.map(f=>`<span class="form-withheld">${E(f.title)}</span><p class="form-use">${E(f.use)}</p>`).join('')}`:''}</aside></section><div class="acs">${related}${acc('업무분장·교육계획 근거','',basis,false)}</div>`;
+};
+workSide=function(){const t=basisTask(ST.task)||T()[0];return `<aside class="work-side"><a class="school-brand" href="#" onclick="event.preventDefault();go('home')"><span class="brand-mark">가동</span><span>서울가동초등학교<small>업무 길잡이</small></span></a><div class="side-select"><span>${E(RL().dept)}</span><h2>${E(RL().label)}</h2><button class="assignment-back" onclick="go('home')">← 업무분장표로</button></div><nav class="side-views" aria-label="업무 화면">${workspaceTabs.map(([id,label],i)=>`<button class="${ST.tab===id?'selected':''}" aria-current="${ST.tab===id?'page':'false'}" onclick="ST.tab='${id}';ST.calFolded=false;render()"><span class="side-icon">${['▤','▦','⌕'][i]}</span>${E(label)}</button>`).join('')}</nav><h2 class="side-caption">같은 담당의 업무</h2><nav class="side-tasks" aria-label="업무 선택">${T().map(x=>`<button class="${ST.task===x.name?'selected':''}" data-split-work="${E(x.name)}">${E(x.name)}<span>›</span></button>`).join('')}</nav></aside>`;};
+let assignmentQuery='';
+assignmentDept='전체';
+function splitHomeRows(){const groups={};for(const [key,r] of Object.entries(DB.R)){if(!assignmentQuery&&assignmentDept!=='전체'&&assignmentDept!==r.dept)continue;const searchable=`${r.label} ${r.dept} ${r.TASKS.map(t=>t.name).join(' ')} ${key==='g07'?'학성위':''}`;if(assignmentQuery&&!searchable.includes(assignmentQuery))continue;(groups[r.dept]??=[]).push([key,r]);}return Object.entries(groups).map(([dept,items])=>`<section class="assignment-card"><h2>${E(dept)}</h2><div class="assignment-role-list">${items.map(([key,r])=>`<button class="assignment-role" data-assignment-role="${E(key)}"><strong>${E(r.label)}</strong></button>`).join('')}</div></section>`).join('');}
+enterAssignment=function(id){useRole(id);ST.task=T()[0].name;ST.view='work';ST.tab='task';render();scrollTo(0,0);};
+
+vHome=function(){const depts=[...new Set(Object.values(DB.R).map(r=>r.dept))];return `<header class="workspace-top"><b>가동초 업무 길잡이</b><span>2026.9.1. 업무분장</span></header><main class="assignment-home"><header class="assignment-heading"><h1>업무분장표</h1><p>담당 업무를 선택하세요.</p><input id="assignment-search" class="q" value="${E(assignmentQuery)}" placeholder="담당 업무 찾기 · 예: 학성위, 교과서, 체육" aria-label="업무 찾기"><button class="fold-all" data-fold-all onclick="collapseAll()">모두 접기</button></header><nav class="assignment-depts" aria-label="부서 선택">${['전체',...depts].map(d=>`<button aria-pressed="${assignmentDept===d}" data-assignment-dept="${E(d)}">${E(d)}</button>`).join('')}</nav><div class="assignment-grid ${assignmentDept!=='전체'?'single-dept':''}">${splitHomeRows()}</div></main><div id="companion-slot" class="assignment-companion"></div>`;};
+document.addEventListener('input',e=>{if(e.target.id==='assignment-search'){assignmentQuery=e.target.value.trim();document.querySelector('.assignment-grid').innerHTML=splitHomeRows();}});
+document.addEventListener('click',e=>{const home=e.target.closest('[data-split-role]');if(home){useRole(home.dataset.splitRole);ST.task=home.dataset.splitName;ST.tab='task';ST.view='work';render();scrollTo(0,0);return;}const side=e.target.closest('[data-split-work]');if(side){ST.task=side.dataset.splitWork;ST.tab='task';render();scrollTo(0,0);}});
+const beforeSplitCompanion=refreshCompanion;
+refreshCompanion=function(){beforeSplitCompanion();if(ST.view!=='work')return;const t=basisTask(ST.task)||T()[0];const title=document.getElementById('guide-title'),copy=document.getElementById('guide-copy'),action=document.getElementById('guide-action');if(ST.tab==='cal'||ST.tab==='todo'){const rows=roleMonthEvidence().flatMap(g=>g.events);title.textContent=`${ST.m}월 · ${RL().label}`;copy.textContent=rows.length?rows[0].title:'';action.hidden=!rows.length;action.onclick=()=>basisOpen(roleMonthEvidence().find(g=>g.task)?.task.name||t.name);}else if(ST.tab==='task'){action.hidden=false;title.textContent=t.name;copy.textContent=t.steps[0];action.innerHTML='작성할 문서 보기 <span>↗</span>';action.onclick=()=>document.querySelector('.writing-docs')?.scrollIntoView({block:'center',behavior:guideMotionOff()?'instant':'smooth'});}else{action.hidden=false;}};
+const splitStyle=document.createElement('style');splitStyle.textContent=`
+.task-intro h1{font-size:30px;line-height:1.4;margin:5px 0 14px}.task-dept{font-weight:700;color:#43675b}.first-action{background:#eaf3ed;border-left:4px solid #48745e;padding:14px 18px!important;font-size:19px!important;line-height:1.7}.first-action b{display:block;margin-bottom:3px}.task-action-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:26px}.task-action-layout h2{font-size:23px}.action-steps{list-style:none;margin:15px 0 0;padding:0}.action-steps li{display:flex;align-items:flex-start;gap:13px;margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid #e1e8df;font-size:19px}.action-steps li>span{min-width:31px;height:31px;line-height:31px;background:#e3eee6;color:#315e46;font-weight:800;border-radius:50%;text-align:center}.action-steps p{margin:0!important;line-height:1.65!important;font-size:19px!important}.writing-docs{background:#f2f5ed;border-radius:12px;padding:20px;align-self:start}.writing-docs p{font-size:18px!important;line-height:1.7!important}.form-direct{display:block;padding:10px;background:#fff;border:1px solid #c1d3c3;border-radius:7px;margin:8px 0;color:#205544;font-weight:700;text-decoration:none}.confirmed-events{list-style:none;padding:0}.confirmed-events li{padding:16px 0;border-bottom:1px solid #d8e1d4}.confirmed-events strong{display:block;font-size:20px;margin:7px 0}.event-date{font-weight:800;color:#305e47}.event-source{font-size:16px;color:#4e655a}.assignment-role{display:flex;align-items:center;justify-content:space-between;gap:10px}.split-assignment-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 14px}.split-assignment-items strong{font-size:18px!important;line-height:1.5}.assignment-heading .q{max-width:560px;margin:14px 0 0;background:#fff}.side-tasks{max-height:42vh;overflow-y:auto}.work-side .side-select h2{font-size:23px}.work-page:empty{min-height:45vh}.work-main .work-controls{position:static}.work-page .task-intro{margin-bottom:14px}.assignment-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.assignment-card{align-self:start}@media(max-width:1150px){.task-action-layout{grid-template-columns:1fr}.split-assignment-items{grid-template-columns:1fr}}@media(max-width:760px){.assignment-grid{grid-template-columns:1fr!important}.task-intro h1{font-size:25px}.writing-docs{padding:15px}}
+`;document.head.append(splitStyle);
+
+workspaceControls=function(){const monthly=ST.tab==='cal'||ST.tab==='todo';return `<section class="work-controls compact-controls" aria-label="학년도와 월 선택"><div class="work-period"><nav class="work-entry-tabs" aria-label="업무와 월별 일정"><button onclick="ST.tab='task';ST.calFolded=false;render()" aria-pressed="${ST.tab==='task'}">업무 흐름</button><button onclick="ST.tab='cal';ST.calFolded=false;render()" aria-pressed="${monthly}">월별 업무</button></nav><button class="fold-all" type="button" onclick="collapseAll()" aria-pressed="${ST.calFolded?'true':'false'}">모두 접기</button><div class="work-years" aria-label="학년도">${[2026,2025].map(y=>`<button aria-pressed="${ST.yr===y}" onclick="ST.yr=${y};render()">${y}학년도</button>`).join('')}</div></div>${monthly?`<div class="work-months" aria-label="월 선택">${MO.map(m=>`<button aria-pressed="${ST.m===m}" onclick="ST.calFolded=false;ST.m=${m};render()">${m}<small>월</small></button>`).join('')}</div>`:''}</section>`;};
+splitStyle.textContent+=`.assignment-grid.single-dept{grid-template-columns:1fr!important}.single-dept .split-assignment-items{grid-template-columns:repeat(3,minmax(0,1fr))}.compact-controls{padding:16px 22px!important}.task-intro{padding:18px 24px!important}.first-action{display:flex;gap:18px;align-items:baseline;padding:10px 14px!important;margin-bottom:0!important}.first-action b{white-space:nowrap}.writing-docs h3{margin-top:18px}.writing-docs .gi .t{font-size:16px}.writing-docs .gi .muted{font-size:14px}@media(max-width:1000px){.single-dept .split-assignment-items{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.single-dept .split-assignment-items{grid-template-columns:1fr}.first-action{display:block}}`;
+splitStyle.textContent+='.guide-action[hidden]{display:none!important}';
+
+splitStyle.textContent+=`.assignment-grid,.assignment-grid.single-dept{display:grid;grid-template-columns:1fr!important;gap:0}.assignment-card{display:grid;grid-template-columns:160px minmax(0,1fr)!important;align-items:stretch}.assignment-card h2{grid-row:auto;grid-column:auto}.assignment-role-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;padding:8px 12px}.assignment-role-list .assignment-role{width:auto;margin:0;min-height:55px;border:1px solid #d8e1d4;background:#fffefa;flex-direction:row}.assignment-role-list strong{font-size:20px!important;font-weight:800}.work-category-picker{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.work-category-picker button{padding:10px 16px;border:1px solid #aabfac;border-radius:9px;background:#fff;font-size:18px;font-weight:700;color:#254832}.work-category-picker button[aria-pressed=true]{background:#3d6b52;color:white}.assignment-home{max-width:1700px}.assignment-heading .q{margin:0}@media(max-width:1100px){.assignment-role-list{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.assignment-card{grid-template-columns:1fr!important}.assignment-role-list{grid-template-columns:repeat(2,minmax(0,1fr))}.assignment-card h2{padding:12px}}`;
+
+splitStyle.textContent+=`.work-entry-tabs{display:flex;gap:10px}.work-entry-tabs button{font-size:20px;font-weight:800;padding:10px 18px;border:1px solid #aabfac;border-radius:8px;background:white;color:#294e3a}.work-entry-tabs button[aria-pressed=true]{background:#3d6b52;color:white}.companion .weather-label{display:none!important}`;
+
+// Existing publication images retain their original masking. Private/excluded IDs never open.
+openG=function(yr,no){
+ const g=findPublicDoc(yr,no);
+ if(!g)return;
+ const src=captureSrc(g.yr,g.no);
+ $('#mdh').innerHTML=`<span class="chip">${g.yr}학년도 에듀파인 기안문</span><h3>${E(g.title)}</h3><p class="muted">문서번호 ${E(g.no)} · ${E(g.date)}</p>`;
+ $('#mdb').innerHTML=`<img class="edufine-capture" src="${E(src)}" alt="${E(g.title)} 에듀파인 기안문" onerror="this.outerHTML='<p class=\\'muted\\'>이 문서의 캡처 이미지가 없습니다.</p>'">`;
+ $('#md').style.display='flex';document.body.style.overflow='hidden';
+};
+ST.calFolded=false;
+const beforeMonthlyCollapse=collapseAll;
+collapseAll=function(){
+ if(ST.view==='work'&&(ST.tab==='cal'||ST.tab==='todo')){ST.calFolded=true;render();return;}
+ beforeMonthlyCollapse();
+};
+document.addEventListener('toggle',e=>{const d=e.target;if(d.matches?.('.month-task-card'))d.querySelector('summary')?.setAttribute('aria-expanded',String(d.open));},true);
+splitStyle.textContent+=`.edufine-capture{display:block;width:100%;height:auto;margin:12px 0;border:1px solid #d6ddd4}.edufine-text{white-space:pre-wrap;font-size:18px;line-height:1.8}`;
+splitStyle.textContent+=`.form-withheld{display:block;padding:10px;background:#f5f5f5;border:1px solid #ccc;border-radius:7px;margin:8px 0;color:#666;font-weight:700}.form-notice{font-size:14px;color:#666;margin:4px 0 8px;font-style:italic}`;
+splitStyle.textContent+=`.month-board{display:grid;gap:10px}.month-board-title{font-size:26px;margin:4px 0 8px;letter-spacing:-.8px}.month-task-card{padding:12px 18px}.month-task-card>summary{cursor:pointer;list-style:none;font-size:20px}.month-task-card>summary::-webkit-details-marker{display:none}.month-task-card:not([open]){padding:10px 18px}.month-empty{padding:8px 4px}.evidence-withheld{cursor:default;pointer-events:none}.chip.gray.evidence-withheld{background:#ececec;color:#666}`;
