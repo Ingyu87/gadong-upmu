@@ -20,3 +20,5 @@ img/
 # Privacy audit logs - keep private
 privacy-audit*.log
 audit-*.json
+dist/
+privacy-validation-report.json
