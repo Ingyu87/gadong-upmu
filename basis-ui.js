@@ -3,7 +3,6 @@ const taskLabel=t=>t.display_name||t.name;
 const basisList=xs=>xs.length?`<ul>${xs.map(x=>`<li>${E(x)}</li>`).join('')}</ul>`:'';
 const basisTask=name=>T().find(t=>t.name===name);
 const basisOpen=name=>{ST.task=name;ST.tab='task';render();scrollTo(0,0);};
-const taskMatches=(itemTask,t)=>itemTask===t.name||(t.parent&&itemTask===t.parent);
 
 function primaryHtml(t){
   const b=t.basis;
@@ -21,13 +20,13 @@ function evidenceEvents(task,month,year){
   const calendarYear=year+(month!=null&&month<=2?1:0);
   const from=month==null?`${year}-03-01`:`${calendarYear}-${String(month).padStart(2,'0')}-01`;
   const until=month==null?`${year+1}-03-01`:new Date(Date.UTC(calendarYear,month,1)).toISOString().slice(0,10);
-  const t=basisTask(task);return DB.G.filter(g=>t?taskMatches(g.task,t):g.task===task).flatMap(g=>(g.verified_events||[]).map(e=>({...e,source:g}))).filter(e=>e.date<until&&(e.end_date||e.date)>=from);
+  return DB.G.filter(g=>g.task===task).flatMap(g=>(g.verified_events||[]).map(e=>({...e,source:g}))).filter(e=>e.date<until&&(e.end_date||e.date)>=from);
 }
 function evidenceEventsHtml(items){return items.length?`<div class="basis-note"><b>본문에서 확인한 업무 시기</b><p class="muted">등록일과 구분한 일정입니다. 계획·안내와 결과 보고를 구분해 확인하세요.</p>${items.map(e=>`<p><b>${E(e.date)}${e.end_date&&e.end_date!==e.date?' ~ '+E(e.end_date):''}</b> · ${E(e.title)}<br><span class="muted">${E(e.status)}</span> <button class="chip" onclick="openG(${e.source.yr},'${E(e.source.no)}')">근거 ${e.source.yr}-${E(e.source.no)}</button></p>`).join('')}</div>`:'';}
 
 function vTask(){
   const t=basisTask(ST.task)||T()[0];ST.task=t.name;
-  const docs=DB.G.filter(g=>taskMatches(g.task,t)),files=DB.D.filter(f=>taskMatches(f.task,t));
+  const docs=DB.G.filter(g=>g.task===t.name),files=DB.D.filter(f=>f.task===t.name);
   const tabs=`<div class="tchips">${T().map(x=>`<button class="${x.name===t.name?'on':''}" data-basis-task="${E(x.name)}">${E(taskLabel(x))}</button>`).join('')}</div>`;
   const docGroups=[ST.yr].map(y=>{
     const rows=docs.filter(g=>g.yr===y);
@@ -41,7 +40,7 @@ function vCal(){
   const m=ST.m,y=ST.yr;
   const cards=T().map(t=>{
     const wp=(RL().WP||[]).filter(w=>w.y===y&&w.m===m&&w.task===t.name),ps=primarySchedule(t,m,y);
-    const docs=DB.G.filter(g=>g.yr===y&&mon(g.date)===m&&taskMatches(g.task,t));
+    const docs=DB.G.filter(g=>g.yr===y&&mon(g.date)===m&&g.task===t.name);
     const events=evidenceEvents(t.name,m,y);
     if(!wp.length&&!ps.length&&!docs.length&&!events.length)return '';
     return `<details class="card cc"><summary><b>${E(taskLabel(t))}</b></summary>${planDatesHtml(ps)}${scheduleHtml(wp)}${evidenceEventsHtml(events)}${docs.length?`<h4>이 달에 등록된 참고 문서</h4><p class="muted">아래 날짜는 문서 등록일입니다. 행사일과 다를 수 있습니다.</p>${more(docs.map(g=>gi(g)),4)}`:''}<button class="mb" data-basis-task="${E(t.name)}">업무 기준과 운영 내용 보기</button></details>`;
