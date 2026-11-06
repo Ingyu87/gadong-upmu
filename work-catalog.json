@@ -1153,6 +1153,24 @@
           "status": "교육계획서에 기재된 예정",
           "kind": "plan",
           "source": "컨설팅 장학"
+        },
+        {
+          "task_id": "research-1-1",
+          "date": "2026-07-13",
+          "end_date": "2026-07-13",
+          "title": "일람표 제출(~13)",
+          "status": "월중계획에 기재된 예정",
+          "kind": "monthly",
+          "source": "기존 월중계획 2026학년도 7월"
+        },
+        {
+          "task_id": "research-1-1",
+          "date": "2026-07-15",
+          "end_date": "2026-07-15",
+          "title": "통지표 제출(~15)",
+          "status": "월중계획에 기재된 예정",
+          "kind": "monthly",
+          "source": "기존 월중계획 2026학년도 7월"
         }
       ],
       "document_links": {
@@ -10271,24 +10289,6 @@
           "status": "월중계획에 기재된 예정",
           "kind": "monthly",
           "source": "기존 월중계획 2026학년도 3월"
-        },
-        {
-          "task_id": "g07-41-3",
-          "date": "2026-07-13",
-          "end_date": "2026-07-13",
-          "title": "일람표 제출(~13)",
-          "status": "월중계획에 기재된 예정",
-          "kind": "monthly",
-          "source": "기존 월중계획 2026학년도 7월"
-        },
-        {
-          "task_id": "g07-41-3",
-          "date": "2026-07-15",
-          "end_date": "2026-07-15",
-          "title": "통지표 제출(~15)",
-          "status": "월중계획에 기재된 예정",
-          "kind": "monthly",
-          "source": "기존 월중계획 2026학년도 7월"
         },
         {
           "task_id": "g07-41-1",
