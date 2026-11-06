@@ -3,3 +3,22 @@
 .env.*
 node_modules/
 *.log
+
+# Privacy quarantine - NEVER deploy these
+.quarantine/
+quarantine/
+**/quarantine/
+
+# Original sensitive data backups - local only
+data-original.json
+data-backup*.json
+sanitization-stats.json
+
+# Images - 491 masked images verified 2026-11-06 (SHA256 manifest checked)
+# img/ now tracked - DO NOT add raw/unmasked images
+
+# Privacy audit logs - keep private
+privacy-audit*.log
+audit-*.json
+dist/
+privacy-validation-report.json
