@@ -84,7 +84,9 @@ const rcvAcc=(l,open)=>l.length?`<details class="ac" style="margin-top:8px" ${op
 function gi(g,short){if(g.pend||g.nb)return `<div class="gi" style="cursor:default"><div class="t">${RC(g)}${E(short?g.title.slice(0,60):g.title)}</div><div class="muted">${g.date} · No.${g.no}${g.sched?' · <span class="chip s2">예정</span>':''}</div></div>`;if(g.priv)return `<div class="gi" style="cursor:default"><div class="t">${E(g.title)}</div><div class="muted">${g.date} · No.${g.no}</div><div class="lock">🔒 비공개 – 담당자에게 직접 문의</div></div>`;
  return `<div class="gi" onclick="openG('${g.yr}','${g.no}')"><div class="t">${E(short?g.title.slice(0,60):g.title)}</div><div class="muted">${g.date} · No.${g.no} · 상세 보기 ›</div></div>`;}
 function openG(yr,no){const g=DB.G.find(x=>x.yr==yr&&x.no==no);$('#mdh').innerHTML=`<div class="row" style="gap:6px"><span class="chip">${g.yr}학년도</span><span class="chip s2">${E(g.task)}</span></div><h3 style="margin-top:6px">${E(g.title)}</h3><div class="muted">기안일 ${g.date} · No.${g.no}${g.att?' · 붙임: '+E(g.att):''}</div>`;
- let b='<div class="muted" style="padding:16px 0;text-align:center">개인정보 보호를 위해 문서 본문은 표시하지 않습니다.<br>담당자에게 직접 문의하세요.</div>';$('#mdb').innerHTML=b;$('#md').style.display='flex';document.body.style.overflow='hidden';}
+ const imgPath=yr==2025?`img/y25_${no}.webp`:`img/${no}.webp`;
+ let b=`<div style="text-align:center"><img src="${imgPath}" alt="에듀파인 기안문" style="max-width:100%;border:1px solid #d6ddd4;border-radius:8px" onerror="this.parentElement.innerHTML='<div class=\\'muted\\' style=\\'padding:16px 0\\'>이 문서의 캡처 이미지가 없습니다.<br>담당자에게 직접 문의하세요.</div>'"></div>`;
+ $('#mdb').innerHTML=b;$('#md').style.display='flex';document.body.style.overflow='hidden';}
 function closeMd(){$('#md').style.display='none';document.body.style.overflow='';}
 addEventListener('keydown',e=>{if(e.key==='Escape')closeMd()});
 function hl(s,q){const re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');return s.replace(re,m=>`<mark>${m}</mark>`);}

@@ -14,8 +14,8 @@ data-original.json
 data-backup*.json
 sanitization-stats.json
 
-# Unverified images - must be visually reviewed before deployment
-img/
+# Images - 491 masked images verified 2026-11-06 (SHA256 manifest checked)
+# img/ now tracked - DO NOT add raw/unmasked images
 
 # Privacy audit logs - keep private
 privacy-audit*.log

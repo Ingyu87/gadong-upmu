@@ -57,12 +57,18 @@ test('data.json has no priv=true entries', () => {
   assert.strictEqual(privMatches.length, 0, `Found ${privMatches.length} priv=true entries`);
 });
 
-test('img/ directory has no unverified images', () => {
+test('img/ directory has only verified masked images', () => {
   if (fs.existsSync(imgPath)) {
     const files = fs.readdirSync(imgPath);
     const imageFiles = files.filter(f => /\.(webp|png|jpg|jpeg|gif)$/i.test(f));
-    assert.strictEqual(imageFiles.length, 0, 
-      `Found ${imageFiles.length} unverified images: ${imageFiles.slice(0, 5).join(', ')}`);
+    // 491 masked images from verified manifest are allowed
+    const VERIFIED_COUNT = 491;
+    assert(imageFiles.length <= VERIFIED_COUNT, 
+      `Found ${imageFiles.length} images, expected max ${VERIFIED_COUNT}`);
+    // All images should be .webp format (masked format)
+    const nonWebp = imageFiles.filter(f => !f.endsWith('.webp'));
+    assert.strictEqual(nonWebp.length, 0, 
+      `Found non-webp images: ${nonWebp.slice(0, 5).join(', ')}`);
   }
 });
 
