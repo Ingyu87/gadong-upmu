@@ -3,7 +3,7 @@ const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 let DB=null;
 function useRole(id){const r=DB.R[id];ST.role=id;DB.G=r.G;DB.D=r.D;DB.TASKS=r.TASKS;DB.WP=(r.WP||[]).filter(x=>x.y!==2025);ST.task=r.task0;ST.q='';}
 const RL=()=>DB.R[ST.role]||DB.R.research;
-window.addEventListener('load',async()=>{DB=await (await fetch('data.json',{cache:'no-store'})).json();useRole('research');init();});
+window.addEventListener('load',async()=>{const responses=await Promise.all(['data.json','work-catalog.json'].map(url=>fetch(url,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('업무 자료를 불러오지 못했습니다.');return r.json();})));DB=responses[0];installWorkCatalog(responses[1]);useRole('research');init();});
 
 const MO=[3,4,5,6,7,8,9,10,11,12,1,2];
 const SEA={
