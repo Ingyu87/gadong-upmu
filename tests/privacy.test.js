@@ -72,6 +72,26 @@ test('data.json has no personal mobile phone numbers', () => {
   assert.strictEqual(mobileMatches.length, 0, `Found ${mobileMatches.length} mobile phone numbers`);
 });
 
+test('data.json has no known personal names', () => {
+  const content = fs.readFileSync(dataPath, 'utf8');
+  const KNOWN_NAMES = [
+    '최문위', '방은희', '이지예', '송지선', '김은진', '이주영',
+    '송연수', '백인규', '박경아', '정홍주', '강미령', '배현미',
+    '권보영', '허윤호', '오준수', '정대준', '정서연', '마렬미',
+    '김채영', '양영숙'
+  ];
+  const foundNames = KNOWN_NAMES.filter(name => content.includes(name));
+  assert.strictEqual(foundNames.length, 0, `Found personal names: ${foundNames.join(', ')}`);
+});
+
+test('data.json has no owners/owner fields with values', () => {
+  const content = fs.readFileSync(dataPath, 'utf8');
+  const ownerMatches = content.match(/"owner[s]?"\s*:\s*"[^"]/g) || [];
+  const ownerArrayMatches = content.match(/"owners"\s*:\s*\[\s*"[^"]/g) || [];
+  const total = ownerMatches.length + ownerArrayMatches.length;
+  assert.strictEqual(total, 0, `Found ${total} owner/owners fields with values`);
+});
+
 test('data.json preserves structural data', () => {
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
   assert(data.R, 'Missing R (roles) object');
