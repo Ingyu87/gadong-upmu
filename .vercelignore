@@ -18,11 +18,14 @@ audit-*.json
 **/privacy_audit/
 uploads/
 
-# Test and development files - not needed in production
+# Test files - not needed in production (served from dist/ only)
 tests/
-scripts/
 *.test.js
 *.spec.js
+
+# NOTE: scripts/ is NOT excluded - required for buildCommand
+# Build output (dist/) is the only publicly served directory
+# scripts/ is uploaded for build but not served (outputDirectory=dist)
 
 # Local development
 .env
