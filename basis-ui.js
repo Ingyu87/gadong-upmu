@@ -3,6 +3,11 @@ const taskLabel=t=>t.display_name||t.name;
 const basisList=xs=>xs.length?`<ul>${xs.map(x=>`<li>${E(x)}</li>`).join('')}</ul>`:'';
 const basisTask=name=>T().find(t=>t.name===name);
 const basisOpen=name=>{ST.task=name;ST.tab='task';render();scrollTo(0,0);};
+// Document filtering using work-catalog document_keys (authoritative source)
+const docKey=g=>`${g.yr}:${g.no}`;
+const taskHasDoc=(t,g)=>t.document_keys&&t.document_keys.includes(docKey(g));
+const docsForTask=t=>DB.G.filter(g=>taskHasDoc(t,g));
+const filesForTask=t=>DB.D.filter(f=>f.task===t.name||(t.parent&&f.task===t.parent));
 
 function primaryHtml(t){
   const b=t.basis;
@@ -26,13 +31,21 @@ function evidenceEventsHtml(items){return items.length?`<div class="basis-note">
 
 function vTask(){
   const t=basisTask(ST.task)||T()[0];ST.task=t.name;
-  const docs=DB.G.filter(g=>g.task===t.name),files=DB.D.filter(f=>f.task===t.name);
+  // Documents: use document_keys from work-catalog (authoritative source)
+  const docs=docsForTask(t);
+  // Files: parent-level (no individual file keys yet)
+  const files=filesForTask(t);
   const tabs=`<div class="tchips">${T().map(x=>`<button class="${x.name===t.name?'on':''}" data-basis-task="${E(x.name)}">${E(taskLabel(x))}</button>`).join('')}</div>`;
   const docGroups=[ST.yr].map(y=>{
     const rows=docs.filter(g=>g.yr===y);
     return acc(`${y}학년도 참고 기안·공문`,'',`<p class="muted">문서의 주제와 담당 업무를 대조해 모은 참고자료입니다. 실시 여부는 각 문서의 계획·결과 내용을 확인하세요.</p>${rows.length?more(rows.map(g=>gi(g)),5):'<p class="muted">연결된 문서가 없습니다.</p>'}`,false);
   }).join('');
-  return `<div class="card"><h2>${E(taskLabel(t))}</h2><p class="muted">${E(RL().dept)} · 업무분장표와 교육계획서를 먼저 확인하세요.</p>${tabs}</div><div class="acs">${primaryHtml(t)}${acc('일정 · 계획과 시행 확인','',planDatesHtml(primarySchedule(t,null,ST.yr))+scheduleHtml((RL().WP||[]).filter(x=>x.y===ST.yr&&x.task===t.name))+evidenceEventsHtml(evidenceEvents(t.name,null,ST.yr))||'<p class="muted">현재 연결된 일정이 없습니다.</p>',false)}${docGroups}${acc('참고파일 이름','',`<p class="muted">학교 원자료의 파일명입니다. 공개 화면에서는 원본을 열지 않습니다.</p>${files.length?more(files.map(fr),8):'<p class="muted">연결된 파일이 없습니다.</p>'}`,false)}</div>`;
+  // Unassigned parent-level docs: docs with parent task name but not in ANY sibling's document_keys
+  const parentTask=t.parent||t.name;
+  const allSiblingKeys=new Set(T().filter(x=>x.parent===parentTask).flatMap(x=>x.document_keys||[]));
+  const unassigned=DB.G.filter(g=>g.task===parentTask&&!allSiblingKeys.has(docKey(g)));
+  const unassignedHtml=unassigned.length&&parentTask!==t.name?acc('세부 업무 미확인 자료','',`<p class="muted">이 담당의 상위 업무('${E(parentTask)}')에 속하지만 세부 업무가 확인되지 않은 문서입니다. 개별 문서의 내용을 직접 확인하세요.</p>${more(unassigned.filter(g=>g.yr===ST.yr).map(g=>gi(g)),5)}`,false):'';
+  return `<div class="card"><h2>${E(taskLabel(t))}</h2><p class="muted">${E(RL().dept)} · 업무분장표와 교육계획서를 먼저 확인하세요.</p>${tabs}</div><div class="acs">${primaryHtml(t)}${acc('일정 · 계획과 시행 확인','',planDatesHtml(primarySchedule(t,null,ST.yr))+scheduleHtml((RL().WP||[]).filter(x=>x.y===ST.yr&&x.task===t.name))+evidenceEventsHtml(evidenceEvents(t.name,null,ST.yr))||'<p class="muted">현재 연결된 일정이 없습니다.</p>',false)}${docGroups}${unassignedHtml}${acc('참고파일 이름','',`<p class="muted">학교 원자료의 파일명입니다. 공개 화면에서는 원본을 열지 않습니다.</p>${files.length?more(files.map(fr),8):'<p class="muted">연결된 파일이 없습니다.</p>'}`,false)}</div>`;
 }
 document.addEventListener('click',e=>{const b=e.target.closest('[data-basis-task]');if(b)basisOpen(b.dataset.basisTask);});
 
@@ -40,7 +53,8 @@ function vCal(){
   const m=ST.m,y=ST.yr;
   const cards=T().map(t=>{
     const wp=(RL().WP||[]).filter(w=>w.y===y&&w.m===m&&w.task===t.name),ps=primarySchedule(t,m,y);
-    const docs=DB.G.filter(g=>g.yr===y&&mon(g.date)===m&&g.task===t.name);
+    // Use document_keys from work-catalog
+    const docs=docsForTask(t).filter(g=>g.yr===y&&mon(g.date)===m);
     const events=evidenceEvents(t.name,m,y);
     if(!wp.length&&!ps.length&&!docs.length&&!events.length)return '';
     return `<details class="card cc"><summary><b>${E(taskLabel(t))}</b></summary>${planDatesHtml(ps)}${scheduleHtml(wp)}${evidenceEventsHtml(events)}${docs.length?`<h4>이 달에 등록된 참고 문서</h4><p class="muted">아래 날짜는 문서 등록일입니다. 행사일과 다를 수 있습니다.</p>${more(docs.map(g=>gi(g)),4)}`:''}<button class="mb" data-basis-task="${E(t.name)}">업무 기준과 운영 내용 보기</button></details>`;
